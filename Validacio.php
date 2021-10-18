@@ -18,7 +18,7 @@
 <body>
         <div class="div1">
             <div id="div1">
-                <a href='Pagina_Principal.html'>
+                <a href='Pagina_Principal.php'>
                     <img src="logo.jpg" alt="Logo Pedralbes" width="200px">
                 </a>
             </div>
@@ -64,7 +64,7 @@
         </form>
     </div>
     <div>
-        <form action="Final_Comanda.html">
+        <form action="Final_Comanda.php">
             <br><br>
             <input type="submit" name="boton" value="siguiente">
         </form>

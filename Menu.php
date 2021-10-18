@@ -10,7 +10,7 @@
 <body>
     <div class="pag" style="display: flex;">
         <div id="div1">
-            <a href='Pagina_Principal.html'>
+            <a href='Pagina_Principal.php'>
                 <img src="logo.jpg" alt="Logo Pedralbes" width="200px">
             </a>
         </div>
@@ -26,7 +26,7 @@
         </form>
     </div>
     <div>
-        <form action="Pagina_Principal.html">
+        <form action="Pagina_Principal.php">
             <br><br>
             <input type="submit" name="boton" value="atras">
         </form>
