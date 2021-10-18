@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+...<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,26 @@
             <h1>Menu</h1>
         </div>
     </div>
+
+    <div class="productos">
+        <table>
+            <tr>
+                <td>aa</td>
+                <td>aa1</td>
+            </tr>
+            <tr>
+                <td>bb</td>
+                <td>bb1</td>
+            </tr>
+        </table>
+
+        <!-- <div id="id_prod1">Producto 1</div> 
+        <div id="id_prod2">Producto 2</div>
+        <div id="id_prod3">Producto 3</div>
+        <div id="id_prod4">Producto 4</div>
+        <div id="id_prod5">Producto 5</div> -->
+    </div>
+
     <div>
         <form action="Validacio.php">
             <br><br>
