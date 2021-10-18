@@ -31,5 +31,17 @@
             <input type="submit" name="boton" value="atras">
         </form>
     </div>
+<?php
+    $num=strlen(string $bocata): int;
+    $html .= "<ul>";
+    for ($i=0;$i<= $bocata.l) {
+
+        $html .= "<li>".$bocata."</li>";
+        $i++;
+
+    }
+    $html .= "</ul>";
+
+?>
 </body>
 </html>
