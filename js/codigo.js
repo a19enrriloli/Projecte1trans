@@ -27,9 +27,6 @@ function retirarProducto(e,idProducto){
     if (document.getElementById("i"+idProducto).value>0){
         document.getElementById("i"+idProducto).value--;
 
-
-
-
     }
 
 }

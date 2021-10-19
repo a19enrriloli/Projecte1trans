@@ -53,17 +53,6 @@
 
 <?php
 
-$num = strlen(string ]): int;
-$myJson = json_decode($myJson, true);
-$html .= "<ul>";
-
-    for ($i=0;$i<= $num;$i++) {
-
-    $html .= "<li>".$."</li>";
-
-    }
-$html .= "</ul>";
-
 ?>
 
 <script type="text/javascript" src="/js/codigo.js"></script>
