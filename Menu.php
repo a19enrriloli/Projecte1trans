@@ -33,11 +33,6 @@
 
             <div id="p30"><div>Articulo 3</div><img src="https://picsum.photos/100?blur&random=3" alt=""><br><button class="afegir">+</button><input type="text" id="ip30" value="0"><button class="treure">-</button></div>
 
-            <div id="p40"><div>Articulo 4</div><img src="https://picsum.photos/100?blur&random=4" alt=""><br><button class="afegir">+</button><input type="text" id="ip40" value="0"><button class="treure">-</button></div>
-
-            <div id="p50"><div>Articulo 5</div><img src="https://picsum.photos/100?blur&random=5" alt=""><br><button class="afegir">+</button><input type="text" id="ip50" value="0"><button class="treure"> -</button></div>
-
-
     </div>
 
 
@@ -56,59 +51,22 @@
     </div>
 
 
-<script>
+<?php
 
+$num = strlen(string ]): int;
+$myJson = json_decode($myJson, true);
+$html .= "<ul>";
 
-let carrito = document.getElementById('form');
+    for ($i=0;$i<= $num;$i++) {
 
-carrito.addEventListener('click', e => {
-
-    if(e.target.classList.contains('afegir')){
-        console.log("Has añadido el producto");
-        console.log(e.target.parentNode.id); 
-        añadirProducto(e,e.target.parentNode.id);
-
-    }else if (e.target.classList.contains('treure')){
-        console.log("Has retirado el producto");
-        console.log(e.target.parentNode.id);
-        retirarProducto(e,e.target.parentNode.id);
-    }
-
-});
-
-function añadirProducto(e,idProducto){
-
-    document.getElementById("i"+idProducto).value++;
-
-}
-
-function retirarProducto(e,idProducto){
-
-    if (document.getElementById("i"+idProducto).value>0){
-        document.getElementById("i"+idProducto).value--;
-
-
-
+    $html .= "<li>".$."</li>";
 
     }
+$html .= "</ul>";
 
-}
+?>
 
-
-function actualizarCarrito(){
-    htmlStr="";
-    linputs= document.querySelectorAll("#form :input");
-    for (let index=0; index <linputs.lenght;index++){
-        const element = linputs [index];
-        if (element.value>0){
-            htmlStr="Producto ".datos.productos[index].nombre + " --> "+ element.value + "unidades <br>";
-        }
-    }
-    document.getElementById("listado")
-}
-
-
-</script>
+<script type="text/javascript" src="/js/codigo.js"></script>
 
 </body>
 </html>
