@@ -25,7 +25,7 @@
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         
-        foreach ($products as $product) {
+        foçreach ($products as $product) {
             echo '<pre>';
             print_r($product);
             echo '</pre>';
