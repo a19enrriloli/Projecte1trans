@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validacio</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
             .div1{
                 display: flex;
@@ -16,13 +17,11 @@
 </head>
 
 <body>
-        <div class="div1">
-            <div id="div1">
-                <a href='Pagina_Principal.php'>
-                    <img src="logo.jpg" alt="Logo Pedralbes" width="200px">
-                </a>
-            </div>
-    </div>
+<div class="pag" style="display: flex;">
+<?php 
+include("header.php");
+?>
+    
     <div>
         <div>
             <h1>Validacio</h1>

@@ -5,56 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="pag" style="display: flex;">
-        <div id="div1">
-            <a href='Pagina_Principal.php'>
-                <img src="logo.jpg" alt="Logo Pedralbes" width="200px">
-            </a>
-        </div>
+
+
+
+<?php 
+include("header.php");
+?>
         
         <div>
             <h1>Menu</h1>
         </div>
     </div>
 
-
-    <?php
-
+    <form id='form'>
+    <h2>Productes mati </h2>
+        <?php
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
- 
-        echo "<div class='mati'>";
-        echo "<b>Productes mati </b></br>";
-
         foreach ($products as $prod) {
+            echo "<div>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
+            echo "<input type='button' value='+'>";
+            echo $prod["preu"]."€ </div>";                
+        }?>
 
-            echo $prod["nom"]."</br>";
-            echo "<img src= '".$prod["ruta"]."' width=200px></br>"; 
-            echo $prod["preu"]."€ </br>";
-                
-        }
+    </form>
 
-        echo "</div>";
-        echo "<div class='tarda'>";
+        <div id='tarda'>
+        <h2>Productes tarda </h2>
+        <?php
+
 
         $data = file_get_contents("admin/Ptarda.json");
-        $products = json_decode($data, true);
-        
-        echo "</br><b>Productes tarda </b></br>";
-
+        $products = json_decode($data, true);        
+     
         foreach ($products as $prod) {
 
             echo $prod["nom"]."</br>";
-            echo "<img src= '".$prod["ruta"]."' width=200px></br>"; 
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
             echo $prod["preu"]."€ </br></br>";
         }
-
-        echo "</div>"
-        
     ?>
+    </div>
     
     <!--
     <div id="form">
@@ -87,4 +83,7 @@
 <script type="text/javascript" src="/js/codigo.js"></script>
 
 </body>
+<?php
+    include ("footer.php");
+?>
 </html>

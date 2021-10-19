@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+
     <title>Cantina Pedralbes 2021</title>
 </head>
 <style>
@@ -12,14 +15,12 @@
     }
 </style>
 <body>
-    <div style="display: flex;">
-    <div class="pag" style=" width: 30%;">
-        <div>
-            <a href='Pagina_Principal.php'>
-                <img src="logo.jpg" alt="Logo Pedralbes" width="200px">
-            </a>
-        </div>
-    </div>
+  
+<?php 
+include("header.php");
+?>
+        
+  
     <div style="display: flex; width: 70%;">
   
         <div>
@@ -37,5 +38,11 @@
 
 </div>
 
+
 </body>
+<footer>
+    <?php
+        include("footer.php");
+    ?>
+</footer>
 </html>
