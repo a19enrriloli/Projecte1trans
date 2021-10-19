@@ -9,62 +9,47 @@
 </head>
 
 <body>
-
-
-
-<?php 
-include("header.php");
-?>
+    <?php 
+    include("header.php");
+    ?>
         
-        <div>
-            <h1>Menu</h1>
-        </div>
+    <div>
+        <h1>Menu</h1>
     </div>
 
-    <form id='form'>
+    <form id='mati'>
     <h2>Productes mati </h2>
-        <?php
+    <?php
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
         foreach ($products as $prod) {
             echo "<div>".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
-            echo "<input type='button' value='+'>";
-            echo $prod["preu"]."€ </div>";                
-        }?>
-
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>";
+            echo $prod["preu"]."€ <br>"; 
+            echo "<input type='button' value='+'></input>";
+            echo "<input type='text' value='0'>";
+            echo "<input type='button' value='-'></input><br><br></div>";               
+        }
+    ?>
     </form>
 
-        <div id='tarda'>
-        <h2>Productes tarda </h2>
-        <?php
-
-
+    <form id='migdia'>
+    <h2>Productes tarda </h2>
+    <?php
         $data = file_get_contents("admin/Ptarda.json");
         $products = json_decode($data, true);        
      
         foreach ($products as $prod) {
 
-            echo $prod["nom"]."</br>";
+            echo "<div>".$prod["nom"]."</br>";
             echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
-            echo $prod["preu"]."€ </br></br>";
+            echo $prod["preu"]."€ <br>";
+            echo "<input type='button' value='+'></input>";
+            echo "<input type='text' value='0'>";
+            echo "<input type='button' value='-'></input><br><br></div>";
         }
     ?>
-    </div>
-    
-    <!--
-    <div id="form">
-
-        <div id="p10">
-            <div>Producte 1</div>
-            <img src="img_productes/producte1.jpg" alt="" width="200px"><br>
-            <button class="afegir">+</button>
-            <input type="text" id="ip10" value="0">
-            <button class="treure">-</button>
-        </div>
-    </div>
-        -->
-
+    </form>
 
     <div>
         <form action="Validacio.php">
