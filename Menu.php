@@ -76,5 +76,11 @@
     </div>
 
 
+<?php
+
+?>
+
+<script type="text/javascript" src="/js/codigo.js"></script>
+
 </body>
 </html>
