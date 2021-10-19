@@ -1,3 +1,51 @@
+/*  ESTILOS DEL HEADER */
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+  }
+      a{
+        margin-left: 50px;  
+      }
+      * {box-sizing: border-box;}
+  
+  body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 50px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  h1 {
+    text-align:center;
+    width: 1400px;
+    
+   
+  }
+  .header-right {
+    float: right;
+  }
 /*  ESTILOS DEL FOOTER */
 .class1 {
     padding:40px 0;
