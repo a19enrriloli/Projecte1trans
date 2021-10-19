@@ -1,4 +1,4 @@
-...<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,22 +21,29 @@
     </div>
 
     <div class="productos">
-        <table>
-            <tr>
-                <td>aa</td>
-                <td>aa1</td>
-            </tr>
-            <tr>
-                <td>bb</td>
-                <td>bb1</td>
-            </tr>
-        </table>
+        <div id="p1">
+            <div>Producte 1 </div>
+            <img src="producte1.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="id1" value=0>
+            <button class="esborrar">-</button><br><br>
+        </div>
+        <div id="p2">
+            <div>Producte 2 </div>
+            <img src="producte2.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="id2" value=0>
+            <button class="esborrar">-</button><br><br>
+        </div>
+        <div id="p3">
+            <div>Producte 3 </div>
+            <img src="producte3.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="id3" value=0>
+            <button class="esborrar">-</button><br><br>
+        </div>
 
-        <!-- <div id="id_prod1">Producto 1</div> 
-        <div id="id_prod2">Producto 2</div>
-        <div id="id_prod3">Producto 3</div>
-        <div id="id_prod4">Producto 4</div>
-        <div id="id_prod5">Producto 5</div> -->
+
     </div>
 
     <div>
@@ -52,17 +59,38 @@
         </form>
     </div>
 
-<?php
+    <script>
+        let gallery = document.getElementById("productos");
+        gallery.addEventListener("click", e =>{
+            if (e.target.classList.contains("afegir")){
+                console.log("Has hecho click en afegir");
+                //Imprimo quien ha generado el evento
+                console.log(e.target);
 
-    $num = strlen(string $bocata): int;
-    $html .= "<ul>";
-    for ($i=0;$i<= $num;$i++) {
+                //Imprimo el ID del padre de quien ha generado el evento
+                console.log(e.target.parentNode.id);
+                //Llamo a la funcion afegirProducte con el id del producto
+                afegirProducte(e.target.parentNode.id);
 
-        $html .= "<li>".$bocata."</li>";
-        
-    }
-    $html .= "</ul>";
+                
+            }
+            else if (e.target.classList.contains("esborrar")){
+                console.log("esborrar");
+                treureProducte(e.target.parentNode.id);
+            }
 
-?>
+            function afegirProducte(idProducte){
+                document.getElementById("i"+idProducte).value++;
+
+            }
+
+            function treureProducte(idProducte){
+                if(document.getElementById("i"+idProducte).value > 0){
+                    document.getElementById("i"+idProducte).value--;
+                }
+            }
+        })
+    </script>
+
 </body>
 </html>
