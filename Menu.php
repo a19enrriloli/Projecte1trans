@@ -21,23 +21,43 @@
     </div>
 
 
+    <?php
+        $data = file_get_contents("admin/productes.json");
+        $products = json_decode($data, true);
+        
+        foreach ($products as $product) {
+            echo '<pre>';
+            print_r($product);
+            echo '</pre>';
+        }
+    ?>
+    
+
     <div id="form">
 
         <div id="p10">
-
-            <div>Articulo 1</div><img src="https://picsum.photos/100?blur&random=1" alt=""><br><button class="afegir">+</button><input type="text" id="ip10" value="0"><button class="treure">-</button>
-
+            <div>Producte 1</div>
+            <img src="img_productes/producte1.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="ip10" value="0">
+            <button class="treure">-</button>
         </div>
 
-            <div id="p20"><div>Articulo 2</div><img src="https://picsum.photos/100?blur&random=2" alt=""><br><button class="afegir">+</button><input type="text" id="ip20" value="0"><button class="treure">-</button></div>
+        <div id="p20">
+            <div>Producte 2</div>
+            ///<img src="img_productes/producte2.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="ip20" value="0">
+            <button class="treure">-</button>
+        </div>
 
-            <div id="p30"><div>Articulo 3</div><img src="https://picsum.photos/100?blur&random=3" alt=""><br><button class="afegir">+</button><input type="text" id="ip30" value="0"><button class="treure">-</button></div>
-
-            <div id="p40"><div>Articulo 4</div><img src="https://picsum.photos/100?blur&random=4" alt=""><br><button class="afegir">+</button><input type="text" id="ip40" value="0"><button class="treure">-</button></div>
-
-            <div id="p50"><div>Articulo 5</div><img src="https://picsum.photos/100?blur&random=5" alt=""><br><button class="afegir">+</button><input type="text" id="ip50" value="0"><button class="treure"> -</button></div>
-
-
+        <div id="p30">
+            <div>Producte 3</div>
+            <img src="img_productes/producte3.jpg" alt="" width="200px"><br>
+            <button class="afegir">+</button>
+            <input type="text" id="ip30" value="0">
+            <button class="treure">-</button>
+        </div>
     </div>
 
 
@@ -55,60 +75,6 @@
         </form>
     </div>
 
-
-<script>
-
-
-let carrito = document.getElementById('form');
-
-carrito.addEventListener('click', e => {
-
-    if(e.target.classList.contains('afegir')){
-        console.log("Has añadido el producto");
-        console.log(e.target.parentNode.id); 
-        añadirProducto(e,e.target.parentNode.id);
-
-    }else if (e.target.classList.contains('treure')){
-        console.log("Has retirado el producto");
-        console.log(e.target.parentNode.id);
-        retirarProducto(e,e.target.parentNode.id);
-    }
-
-});
-
-function añadirProducto(e,idProducto){
-
-    document.getElementById("i"+idProducto).value++;
-
-}
-
-function retirarProducto(e,idProducto){
-
-    if (document.getElementById("i"+idProducto).value>0){
-        document.getElementById("i"+idProducto).value--;
-
-
-
-
-    }
-
-}
-
-
-function actualizarCarrito(){
-    htmlStr="";
-    linputs= document.querySelectorAll("#form :input");
-    for (let index=0; index <linputs.lenght;index++){
-        const element = linputs [index];
-        if (element.value>0){
-            htmlStr="Producto ".datos.productos[index].nombre + " --> "+ element.value + "unidades <br>";
-        }
-    }
-    document.getElementById("listado")
-}
-
-
-</script>
 
 </body>
 </html>
