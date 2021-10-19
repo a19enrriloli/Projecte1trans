@@ -27,20 +27,20 @@
         $products = json_decode($data, true);
 
             
-            foreach ($products as $prod) {
+        foreach ($products as $prod) {
 
-                    echo["nom"]." ".$prod["precio"]."€ ";
-                    echo "<img src '".$prod["ruta"]."'></br>";     
-            }
-            $data = file_get_contents("admin/Ptarda.json");
-            $products = json_decode($data, true);
-            
-            foreach ($products as $prod) {
-
-                    echo["nom"]." ".$prod["precio"]."€ ";
-                    echo "<img src '".$prod["ruta"]."'></br>";     
-            }
+            echo["nom"]." ".$prod["precio"]."€ ";
+            echo "<img src '".$prod["ruta"]."'></br>";     
         }
+        $data1 = file_get_contents("admin/Ptarda.json");
+        $products1 = json_decode($data1, true);
+            
+        foreach ($products1 as $prod1) {
+
+            echo["nom"]." ".$prod1["precio"]."€ ";
+            echo "<img src '".$prod1["ruta"]."'></br>";     
+        }
+        
     ?>
     
 
