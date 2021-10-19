@@ -22,13 +22,25 @@
 
 
     <?php
-        $data = file_get_contents("admin/productes.json");
+
+        $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
-        
-        foçreach ($products as $product) {
-            echo '<pre>';
-            print_r($product);
-            echo '</pre>';
+        $hora= getdate();
+        if($hora<11:30)){
+            foreach ($products as $prod) {
+
+                    echo["nom"]." ".$prod["precio"]."€ ";
+                    echo "<img src '".$prod["ruta"]."'></br>";     
+            }
+        }else{
+            $data = file_get_contents("admin/Ptarda.json");
+            $products = json_decode($data, true);
+            
+            foreach ($products as $prod) {
+
+                    echo["nom"]." ".$prod["precio"]."€ ";
+                    echo "<img src '".$prod["ruta"]."'></br>";     
+            }
         }
     ?>
     
