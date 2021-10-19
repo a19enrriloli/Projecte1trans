@@ -25,25 +25,38 @@
 
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
+ 
+        echo "<div class='mati'>";
+        echo "<b>Productes mati </b></br>";
 
-            
-            foreach ($products as $prod) {
+        foreach ($products as $prod) {
 
-                    echo["nom"]." ".$prod["precio"]."€ ";
-                    echo "<img src '".$prod["ruta"]."'></br>";     
-            }
-            $data = file_get_contents("admin/Ptarda.json");
-            $products = json_decode($data, true);
-            
-            foreach ($products as $prod) {
-
-                    echo["nom"]." ".$prod["precio"]."€ ";
-                    echo "<img src '".$prod["ruta"]."'></br>";     
-            }
+            echo $prod["nom"]."</br>";
+            echo "<img src= '".$prod["ruta"]."' width=200px></br>"; 
+            echo $prod["preu"]."€ </br>";
+                
         }
+
+        echo "</div>";
+        echo "<div class='tarda'>";
+
+        $data = file_get_contents("admin/Ptarda.json");
+        $products = json_decode($data, true);
+        
+        echo "</br><b>Productes tarda </b></br>";
+
+        foreach ($products as $prod) {
+
+            echo $prod["nom"]."</br>";
+            echo "<img src= '".$prod["ruta"]."' width=200px></br>"; 
+            echo $prod["preu"]."€ </br></br>";
+        }
+
+        echo "</div>"
+        
     ?>
     
-
+    <!--
     <div id="form">
 
         <div id="p10">
@@ -53,24 +66,8 @@
             <input type="text" id="ip10" value="0">
             <button class="treure">-</button>
         </div>
-
-        <div id="p20">
-            <div>Producte 2</div>
-            ///<img src="img_productes/producte2.jpg" alt="" width="200px"><br>
-            <button class="afegir">+</button>
-            <input type="text" id="ip20" value="0">
-            <button class="treure">-</button>
-        </div>
-
-        <div id="p30">
-            <div>Producte 3</div>
-            <img src="img_productes/producte3.jpg" alt="" width="200px"><br>
-            <button class="afegir">+</button>
-            <input type="text" id="ip30" value="0">
-            <button class="treure">-</button>
-        </div>
     </div>
-
+        -->
 
 
     <div>
@@ -86,10 +83,6 @@
         </form>
     </div>
 
-
-<?php
-
-?>
 
 <script type="text/javascript" src="/js/codigo.js"></script>
 
