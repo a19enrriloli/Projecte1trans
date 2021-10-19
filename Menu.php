@@ -1,4 +1,4 @@
-...<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,24 +20,27 @@
         </div>
     </div>
 
-    <div class="productos">
-        <table>
-            <tr>
-                <td>aa</td>
-                <td>aa1</td>
-            </tr>
-            <tr>
-                <td>bb</td>
-                <td>bb1</td>
-            </tr>
-        </table>
 
-        <!-- <div id="id_prod1">Producto 1</div> 
-        <div id="id_prod2">Producto 2</div>
-        <div id="id_prod3">Producto 3</div>
-        <div id="id_prod4">Producto 4</div>
-        <div id="id_prod5">Producto 5</div> -->
+    <div id="form">
+
+        <div id="p10">
+
+            <div>Articulo 1</div><img src="https://picsum.photos/100?blur&random=1" alt=""><br><button class="afegir">+</button><input type="text" id="ip10" value="0"><button class="treure">-</button>
+
+        </div>
+
+            <div id="p20"><div>Articulo 2</div><img src="https://picsum.photos/100?blur&random=2" alt=""><br><button class="afegir">+</button><input type="text" id="ip20" value="0"><button class="treure">-</button></div>
+
+            <div id="p30"><div>Articulo 3</div><img src="https://picsum.photos/100?blur&random=3" alt=""><br><button class="afegir">+</button><input type="text" id="ip30" value="0"><button class="treure">-</button></div>
+
+            <div id="p40"><div>Articulo 4</div><img src="https://picsum.photos/100?blur&random=4" alt=""><br><button class="afegir">+</button><input type="text" id="ip40" value="0"><button class="treure">-</button></div>
+
+            <div id="p50"><div>Articulo 5</div><img src="https://picsum.photos/100?blur&random=5" alt=""><br><button class="afegir">+</button><input type="text" id="ip50" value="0"><button class="treure"> -</button></div>
+
+
     </div>
+
+
 
     <div>
         <form action="Validacio.php">
@@ -52,17 +55,60 @@
         </form>
     </div>
 
-<?php
 
-    $num = strlen(string $bocata): int;
-    $html .= "<ul>";
-    for ($i=0;$i<= $num;$i++) {
+<script>
 
-        $html .= "<li>".$bocata."</li>";
-        
+
+let carrito = document.getElementById('form');
+
+carrito.addEventListener('click', e => {
+
+    if(e.target.classList.contains('afegir')){
+        console.log("Has añadido el producto");
+        console.log(e.target.parentNode.id); 
+        añadirProducto(e,e.target.parentNode.id);
+
+    }else if (e.target.classList.contains('treure')){
+        console.log("Has retirado el producto");
+        console.log(e.target.parentNode.id);
+        retirarProducto(e,e.target.parentNode.id);
     }
-    $html .= "</ul>";
 
-?>
+});
+
+function añadirProducto(e,idProducto){
+
+    document.getElementById("i"+idProducto).value++;
+
+}
+
+function retirarProducto(e,idProducto){
+
+    if (document.getElementById("i"+idProducto).value>0){
+        document.getElementById("i"+idProducto).value--;
+
+
+
+
+    }
+
+}
+
+
+function actualizarCarrito(){
+    htmlStr="";
+    linputs= document.querySelectorAll("#form :input");
+    for (let index=0; index <linputs.lenght;index++){
+        const element = linputs [index];
+        if (element.value>0){
+            htmlStr="Producto ".datos.productos[index].nombre + " --> "+ element.value + "unidades <br>";
+        }
+    }
+    document.getElementById("listado")
+}
+
+
+</script>
+
 </body>
 </html>
