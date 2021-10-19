@@ -75,7 +75,6 @@
             <input type="submit" name="boton" value="atras">
         </form>
     </div>
-
-
+    
 </body>
 </html>
