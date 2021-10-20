@@ -12,22 +12,23 @@
     <?php 
     include("header.php");
     ?>
-        
+
     <div>
-        <h1 class="h1menu">Menu</h1>
+        <h1>Menu</h1>
     </div>
 
     <form id='form'>
     <h2>Productes mati </h2>
     <?php
+
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
         foreach ($products as $prod) {
-            echo "<div>".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width='300px' height='200px'></br>";
+            echo "<div id=$id >".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px ></br>";
             echo $prod["preu"]."€ <br>"; 
             echo "<input type='button' value='+' class='afegir'></input>";
-            echo "<input type='text' value='0' id='i'>";
+            echo "<input type='text' value='0'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";               
         }
     ?>
@@ -42,7 +43,7 @@
         foreach ($products as $prod) {
 
             echo "<div>".$prod["nom"]."</br>";
-            echo "<img  width='300px' height='200px'   src='img/productes/".$prod["ruta"]."'></br>"; 
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0' id='i'>";
