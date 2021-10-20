@@ -16,27 +16,27 @@
 </style>
 <body>
   
-<?php 
-include("header.php");
-?>
-        
-  
-    <div style="display: flex; width: 70%;">
-  
-        <div>
-            <a href="Administracio.php"><b> Administracio </b></a> 
+    <?php 
+        include("header.php");
+    ?>
+            
+    
+        <div style="display: flex; width: 70%;">
+    
+            <div>
+                <a href="Administracio.php"><b> Administracio </b></a> 
+            </div>
+            
         </div>
-        
     </div>
-</div>
-<div>
+    <div>
 
-    <form action="Menu.php">
-        <br><br>
-        <input type="submit" name="boton" value="Menu">
-    </form>
+        <form action="Menu.php">
+            <br><br>
+            <input type="submit" name="boton" value="Menu">
+        </form>
 
-</div>
+    </div>
 
 
 </body>
