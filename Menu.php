@@ -17,7 +17,7 @@
         <h1>Menu</h1>
     </div>
 
-    <form id='mati'>
+    <form id='mati' class="form">
     <h2>Productes mati </h2>
     <?php
         $data = file_get_contents("admin/Pmati.json");
@@ -26,14 +26,14 @@
             echo "<div>".$prod["nom"]."</br>";
             echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>";
             echo $prod["preu"]."€ <br>"; 
-            echo "<input type='button' value='+'></input>";
-            echo "<input type='text' value='0'>";
-            echo "<input type='button' value='-'></input><br><br></div>";               
+            echo "<input type='button' value='+' class='afegir'></input>";
+            echo "<input type='text' value='0' id='i'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";               
         }
     ?>
     </form>
 
-    <form id='migdia'>
+    <form id='migdia' class="form">
     <h2>Productes tarda </h2>
     <?php
         $data = file_get_contents("admin/Ptarda.json");
@@ -44,9 +44,9 @@
             echo "<div>".$prod["nom"]."</br>";
             echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
             echo $prod["preu"]."€ <br>";
-            echo "<input type='button' value='+'></input>";
-            echo "<input type='text' value='0'>";
-            echo "<input type='button' value='-'></input><br><br></div>";
+            echo "<input type='button' value='+' class='afegir'></input>";
+            echo "<input type='text' value='0' id='i'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
     ?>
     </form>

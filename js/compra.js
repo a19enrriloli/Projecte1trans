@@ -1,5 +1,5 @@
 
-let carrito = document.getElementById('form');
+let carrito = document.getElementsByClassName('form');
 
 carrito.addEventListener('click', e => {
 
@@ -28,7 +28,10 @@ function retirarProducto(e,idProducto){
         document.getElementById("i"+idProducto).value--;
 
     }
-
+    if (document.getElementById("i"+idProducto).value==0){
+        console.log("#"+idProducto+"treure");
+        e.target.style.display="none";
+    }
 }
 
 
@@ -41,5 +44,4 @@ function actualizarCarrito(){
             htmlStr="Producto ".datos.productos[index].nombre + " --> "+ element.value + "unidades <br>";
         }
     }
-    document.getElementById("listado")
 }
