@@ -9,66 +9,66 @@
 </head>
 
 <body>
-<?php
-include("header.php");
-?>
+    <?php 
+    include("header.php");
+    ?>
+        
+    <div>
+        <h1>Menu</h1>
+    </div>
 
-<div>
-    <h1>Menu</h1>
-</div>
-
-<form id='form'>
+    <form id='form'>
     <h2>Productes mati </h2>
     <?php
-    $data = file_get_contents("admin/Pmati.json");
-    $products = json_decode($data, true);
-    foreach ($products as $prod) {
-        echo "<div>".$prod["nom"]."</br>";
-        echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>";
-        echo $prod["preu"]."€ <br>";
-        echo "<input type='button' value='+' class='afegir'></input>";
-        echo "<input type='text' value='0' id='i'>";
-        echo "<input type='button' value='-' class='treure'></input><br><br></div>";
-    }
+        $data = file_get_contents("admin/Pmati.json");
+        $products = json_decode($data, true);
+        foreach ($products as $prod) {
+            echo "<div>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>";
+            echo $prod["preu"]."€ <br>"; 
+            echo "<input type='button' value='+' class='afegir'></input>";
+            echo "<input type='text' value='0' id='i'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";               
+        }
     ?>
-</form>
+    </form>
 
-<form id='migdia' class="form">
+    <form id='migdia' class="form">
     <h2>Productes tarda </h2>
     <?php
-    $data = file_get_contents("admin/Ptarda.json");
-    $products = json_decode($data, true);
+        $data = file_get_contents("admin/Ptarda.json");
+        $products = json_decode($data, true);        
+     
+        foreach ($products as $prod) {
 
-    foreach ($products as $prod) {
-
-        echo "<div>".$prod["nom"]."</br>";
-        echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>";
-        echo $prod["preu"]."€ <br>";
-        echo "<input type='button' value='+' class='afegir'></input>";
-        echo "<input type='text' value='0' id='i'>";
-        echo "<input type='button' value='-' class='treure'></input><br><br></div>";
-    }
+            echo "<div>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
+            echo $prod["preu"]."€ <br>";
+            echo "<input type='button' value='+' class='afegir'></input>";
+            echo "<input type='text' value='0' id='i'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";
+        }
     ?>
-</form>
+    </form>
 
-<div>
-    <form action="Validacio.php">
-        <br><br>
-        <input type="submit" name="boton" value="siguiente">
-    </form>
-</div>
-<div>
-    <form action="Pagina_Principal.php">
-        <br><br>
-        <input type="submit" name="boton" value="atras">
-    </form>
-</div>
+    <div>
+        <form action="Validacio.php">
+            <br><br>
+            <input type="submit" name="boton" value="siguiente">
+        </form>
+    </div>
+    <div>
+        <form action="Pagina_Principal.php">
+            <br><br>
+            <input type="submit" name="boton" value="atras">
+        </form>
+    </div>
 
 
 <script type="text/javascript" src="/js/compra.js"></script>
 
 </body>
 <?php
-include ("footer.php");
+    include ("footer.php");
 ?>
 </html>
