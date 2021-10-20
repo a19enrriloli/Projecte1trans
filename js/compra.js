@@ -49,14 +49,12 @@ function horaM(horaMenu){
     let mati = document.getElementById("mati");
     if(horaMenu <="11:30"){
         
-        tarda.disabled = false;
-        mati.disabled = true;
+        tarda.style.display = "none";
 
         return "mati";
     }else{
         
-        tarda.disabled = true;
-        mati.disabled = false;
+        mati.style.display = "none";
         return "tarda";
     }
 }
