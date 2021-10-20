@@ -17,11 +17,11 @@
 </head>
 
 <body>
-<div class="pag" style="display: flex;">
+
 <?php 
 include("header.php");
 ?>
-    
+    <div class="pag" style="display: flex;">
     <div>
         <div>
             <h1>Validacio</h1>
