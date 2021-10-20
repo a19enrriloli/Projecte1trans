@@ -22,5 +22,11 @@
     <div>
         <a href="Pagina_Principal.php"><b> Return </b></a>
     </div>
+    
 </body>
+
+
+<?php
+    include ("footer.php");
+    ?>
 </html>
