@@ -1,5 +1,5 @@
 
-let carrito = document.getElementsByClassName('form');
+let carrito = document.getElementById('form');
 
 carrito.addEventListener('click', e => {
 

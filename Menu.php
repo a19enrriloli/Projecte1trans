@@ -17,7 +17,7 @@
         <h1>Menu</h1>
     </div>
 
-    <form id='mati' class="form">
+    <form id='form'>
     <h2>Productes mati </h2>
     <?php
         $data = file_get_contents("admin/Pmati.json");
