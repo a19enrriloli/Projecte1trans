@@ -9,8 +9,7 @@
 <h1> CANTINA<h1>
 <div class="header-right">
     <a href="Pagina_Principal.php"><b>Home</a>
-    <a href="Administracio.php"> Administracio </b></a> 
     <a href="Menu.php"><b> Menu </b></a> 
-   
+   <a href="Administracio.php"> Administracio </b></a> 
 </div>
 </div>
