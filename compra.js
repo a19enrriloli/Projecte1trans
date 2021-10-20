@@ -5,7 +5,7 @@ carrito.addEventListener('click', e => {
 
     if(e.target.classList.contains('afegir')){
         console.log("Has añadido el producto");
-        console.log(e.target.parentNode.id); 
+        console.log(e.target.parentNode.id);
         añadirProducto(e,e.target.parentNode.id);
 
     }else if (e.target.classList.contains('treure')){
