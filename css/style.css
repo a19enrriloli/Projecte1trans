@@ -39,7 +39,7 @@
   }
   
   
-  .header h1 {
+   .header h1 {
     text-align:center;
     width: 1400px;
     
@@ -109,3 +109,12 @@
 
 
 
+#form{
+  display:  inline-grid;
+  margin-left: 400px;
+}
+.h1menu{
+  text-align:center;
+  width: 1800px;
+  
+}
