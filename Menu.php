@@ -65,7 +65,7 @@
     </div>
 
 
-<script type="text/javascript" src="/js/codigo.js"></script>
+<script type="text/javascript" src="js/compra.js"></script>
 
 </body>
 <?php

@@ -23,19 +23,15 @@
     
         <div style="display: flex; width: 70%;">
     
-            <div>
-                <a href="Administracio.php"><b> Administracio </b></a> 
-            </div>
+         
             
         </div>
     </div>
-    <div>
-
-        <form action="Menu.php">
-            <br><br>
-            <input type="submit" name="boton" value="Menu">
-        </form>
-
+    <div class="bocadillos">
+    <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">
+    
+    <img class=logo src="img/entrepans.jpg" alt="Logo pp" width="600px">
+    <img class=logo src="img/bocatas.jpg" alt="Logo pp" width="600px">
     </div>
 
 
