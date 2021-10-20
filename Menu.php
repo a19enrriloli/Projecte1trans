@@ -20,7 +20,11 @@
     <form id='form'>
     <h2>Productes mati </h2>
     <?php
+<<<<<<< Updated upstream
 
+=======
+        $id=0;
+>>>>>>> Stashed changes
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
         foreach ($products as $prod) {
@@ -31,6 +35,7 @@
             echo "<input type='text' value='0'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";               
         }
+        $id++;
     ?>
     </form>
 
