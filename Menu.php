@@ -33,7 +33,7 @@
     ?>
     </form>
 
-    <form id='migdia' class="form">
+    <form id='form'>
     <h2>Productes tarda </h2>
     <?php
         $data = file_get_contents("admin/Ptarda.json");
