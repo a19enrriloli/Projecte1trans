@@ -14,7 +14,7 @@
     ?>
 
     <div>
-        <h1>Menu</h1>
+        <h1 class="h1menu">Menu</h1>
     </div>
 
     <form id='form'>
@@ -24,7 +24,7 @@
         $products = json_decode($data, true);
         foreach ($products as $prod) {
             echo "<div ".$prod["id"]." >".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=200px ></br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px ></br>";
             echo $prod["preu"]."€ <br>"; 
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0'>";
@@ -42,7 +42,7 @@
         foreach ($products as $prod) {
 
             echo "<div ".$prod["id"].">".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=200px></br>"; 
+            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0' id='i'>";
