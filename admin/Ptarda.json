@@ -4,14 +4,14 @@
 		"preu": "0.90",
 		"torn": "pati",
 		"ruta": "producte11.jpg",
-		"id": "p1"
+		"id": "p4"
 	},
 	{
 		"nom": "producte2",
 		"preu": "2.50",
 		"torn": "dinar",
 		"ruta": "producte22.jpg",
-		"id": "p2"
+		"id": "p5"
 	},
 
 	{
@@ -19,6 +19,6 @@
 		"preu": "1.50",
 		"torn": "pati",
 		"ruta": "producte33.jpg",
-		"id": "p3"
+		"id": "p6"
 	}
 ]
