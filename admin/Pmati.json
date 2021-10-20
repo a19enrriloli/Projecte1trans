@@ -3,19 +3,22 @@
 		"nom": "producte1",
 		"preu": "0.90",
 		"torn": "pati",
-		"ruta": "producte1.jpg"
+		"ruta": "producte1.jpg",
+		"id": "p1"
 	},
 	{
 		"nom": "producte2",
 		"preu": "2.50",
 		"torn": "dinar",
-		"ruta": "producte2.jpg"
+		"ruta": "producte2.jpg",
+		"id": "p2"
 	},
 
 	{
 		"nom": "producte3",
 		"preu": "1.50",
 		"torn": "pati",
-		"ruta": "producte3.jpg"
+		"ruta": "producte3.jpg",
+		"id": "p2"
 	}
 ]
