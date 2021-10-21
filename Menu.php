@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE["comanda"])){
+    header('Location: error.php ');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +23,7 @@
         <h1 class="h1menu">Menu</h1>
     </div>
 
+   
     <form id='mati'>
     <h2>Productes mati </h2>
     <?php

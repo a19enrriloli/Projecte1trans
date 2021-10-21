@@ -36,7 +36,7 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" name="Usuari[Nom]" maxlength="30" required/>
+                    <input type="text" id="nom" maxlength="30" required/>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" name="Usuari[telefon]" maxlength="30" required/>
+                    <input type="text" id="telefon" maxlength="30" required/>
                 </div>
             </div>
             <div class="div1">
@@ -55,11 +55,12 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" name="Usuari[email]" maxlength="30" required/>
+                    <input type="text" id="email" maxlength="30" required/>
                 </div>
             </div>
     </div>
-
+    <input type="submit" id="submit" name="boton" value="enviar">
+    <input type="submit" name="boton" value="limpiar">
         </form>
     </div>
     <div>
@@ -74,7 +75,7 @@ include("header.php");
             <input type="submit" name="boton" value="atras">
         </form>
     </div>
-    
+    <script type="text/javascript" src="js/validacio.js"></script>
 </body>
 <?php
     include ("footer.php");
