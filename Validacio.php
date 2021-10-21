@@ -27,7 +27,9 @@ include("header.php");
             <h1>Validacio</h1>
         </div>
 
-
+    <?php
+        if(!$_POST){
+    ?>
     <div>
         <form method="POST" >
             <div class="div1">
