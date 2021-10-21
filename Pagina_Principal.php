@@ -9,24 +9,12 @@
 
     <title>Cantina Pedralbes 2021</title>
 </head>
-<style>
-    a{
-      margin-left: 50px;  
-    }
-</style>
 <body>
   
     <?php 
         include("header.php");
     ?>
-            
-    
-        <div style="display: flex; width: 70%;">
-    
-         
-            
-        </div>
-    </div>
+                
     <div class="bocadillos">
     <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">
     

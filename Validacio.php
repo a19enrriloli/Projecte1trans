@@ -21,7 +21,7 @@
 <?php 
 include("header.php");
 ?>
-    <div class="pag" style="display: flex;">
+    <div class="pag">
     <div>
         <div>
             <h1>Validacio</h1>
