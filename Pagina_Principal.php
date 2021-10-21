@@ -19,7 +19,7 @@
     <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">
     
     <img class=logo src="img/entrepans.jpg" alt="Logo pp" width="600px">
-    <img class=logo src="img/bocatas.jpg" alt="Logo pp" width="600px">
+    <img class=logo src="img/bocatas.jpg" alt="L ogo pp" width="600px">
     </div>
 
 
