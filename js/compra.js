@@ -1,19 +1,13 @@
 
 
 //AQUI TENGO QIE PONER EL CODIGO PARA DECIDIR SI ES MAÑANA O TARDE 
-let day = new Date();
 
-let fecha = day.getDate() + '-' + day.getMonth() + '-' + day.getFullYear();
-
-let hora = day.getHours()
-let minuts= day.getMinutes() ;
-console.log(hora);
 
 
 // LUEGO OCULTARE EL QUE NO TOQUE.. Y SABRÉ CUAL TENGO QUE ESCUCHAR
 
 
-let mati_o_tarda = horaM(hora);
+let mati_o_tarda = horaMenu();
 
 let carrito = document.getElementById(mati_o_tarda);
 
@@ -46,21 +40,32 @@ function retirarProducto(e,idProducto){
     }
 }
 
-function horaM(horaMenu){
+function horaMenu(){
+    
+    let day = new Date();
+    
+    let hora = day.getHours();
+    let minuts= day.getMinutes() ;
+
+    console.log(hora);
+    console.log(minuts);
     let mati = document.getElementById("mati");
     let tarda = document.getElementById("tarda");
-    if(horaMenu <=11 ){
+    if(hora < 11  ){
        
         tarda.style.display = "none";
 
         return "mati";
-    }else{
+    }else if(hora==11 && minuts <=30){
+        tarda.style.display = "none";
+
+        return "mati";
         
+    }else{
         mati.style.display = "none";
         return "tarda";
     }
 }
-//console.log (hora<"11:30");
 function actualizarCarrito(){
     htmlStr="";
     linputs= document.querySelectorAll("#form :input");
