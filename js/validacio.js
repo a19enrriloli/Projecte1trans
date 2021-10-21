@@ -12,12 +12,12 @@
     }
 
     if(comprovarTel() == false){
-        alert(error[1]);
+        alert(error[2]);
         e.preventDefault();
     }
 
     if(comprovarEmail() == false){
-        alert(error[2]);
+        alert(error[1]);
         e.preventDefault();
     }
  });
@@ -25,21 +25,27 @@
 
  function comprovarNom(){
 
-    return (document.getElementById("nom").value == "") ? true : false;
+    return (document.getElementById("nom").value == "") ? false : true;
  }
 
 function comprovarTel(){
-    let telefon = document.getElementById("telefon").Value, i;
-    if(telefon == ""){ i = 2; }
-    else if (!(/^[0-9]+$/.test(telefon))) { i = 2;}
-    
-    return false;
+    let telefon = document.getElementById("telefon").value;
+    console.log(telefon);
+    if(telefon == ""){
+        return false;
+    }else if (!(/^[0-9]+$/.test(telefon))){
+        return false; 
+    }
+        return true;
 }
 
 
 function comprovarEmail(){
-    let email = document.getElementById("email").value, i;
-    if(email == ""){ i = 1; }
-    else if (!(/^[a-zA-Z0-9._-]+@inspedralbes.cat$/.exec(email))) { i = 1;}
-    return false;
+    let email = document.getElementById("email").value;
+    if(email == ""){
+        return false;
+    }else if (!(/^[a-zA-Z0-9._-]+@inspedralbes.cat$/.exec(email))){
+        return false;
+    }
+    return true;
 }
