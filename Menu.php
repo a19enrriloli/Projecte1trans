@@ -22,13 +22,13 @@
     <?php
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
-        foreach ($products as $prod) {
-            echo "<div id='".$prod["id"]."' >".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px ></br>";
-            echo $prod["preu"]."€ <br>"; 
+       foreach ($products as $prod) {
+            echo "<div  id='".$prod["id"]."'>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
+            echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
-            echo "<input type='text' value='0' id='i".$prod["id"]."' >";
-            echo "<input type='button' value='-' class='treure'></input><br><br></div>";               
+            echo "<input type='text' value='0' id='i".$prod["id"]."'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
     ?>
     </form>
