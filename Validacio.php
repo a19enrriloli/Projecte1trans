@@ -60,7 +60,6 @@ include("header.php");
             </div>
     </div>
     <input type="submit" id="submit" name="boton" value="enviar">
-    <input type="submit" name="boton" value="limpiar">
         </form>
     </div>
     <div>

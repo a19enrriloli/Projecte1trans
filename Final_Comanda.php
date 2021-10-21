@@ -15,7 +15,7 @@
     <?php
     echo"<br>";
     if(isset($_COOKIE["comanda"])){
-        echo"ja existeix la cookie";
+        
     }else{
         setcookie("comanda", 54321);
     }
