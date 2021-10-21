@@ -1,4 +1,4 @@
- const error = ["¡Introdueix nom!","Email incorrecte","Número de telefono incorrecto"];
+ const error = ["¡Nom Incorrecte!","¡Email Incorrecte!","¡Número de telefono Incorrecto!"];
  
  window.onload = function(){
      document.getElementById("nom").focus();
@@ -6,20 +6,18 @@
  document.getElementById("submit").addEventListener("click", function(e){
     var i;
 
-    if(comprovarNom()){
+    if(comprovarNom()== false){
         alert(error[0]);
         e.preventDefault();
     }
 
-    i = comprovarTel();
-    if(i){
-        alert(error[i]);
+    if(comprovarTel() == false){
+        alert(error[1]);
         e.preventDefault();
     }
 
-    i = comprovarEmail();
-    if(comprovarEmail()){
-        alert(error[i]);
+    if(comprovarEmail() == false){
+        alert(error[2]);
         e.preventDefault();
     }
  });
@@ -32,17 +30,16 @@
 
 function comprovarTel(){
     let telefon = document.getElementById("telefon").Value, i;
-    if(telefon == ""){ i = 3; }
-    else if (!(/^[0-9]+$/.test(telefon))) { i = 3;}
-    else { i = 3; }
-    return i;
+    if(telefon == ""){ i = 2; }
+    else if (!(/^[0-9]+$/.test(telefon))) { i = 2;}
+    
+    return false;
 }
 
 
 function comprovarEmail(){
     let email = document.getElementById("email").value, i;
-    if(email == ""){ i = 2; }
-    else if (!(/^[a-zA-Z0-9._-]+@inspedralbes.cat$/.exec(email))) { i = 2;}
-    else { i = 2; }
-    return i;
+    if(email == ""){ i = 1; }
+    else if (!(/^[a-zA-Z0-9._-]+@inspedralbes.cat$/.exec(email))) { i = 1;}
+    return false;
 }
