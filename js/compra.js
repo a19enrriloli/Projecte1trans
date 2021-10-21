@@ -5,7 +5,9 @@ let day = new Date();
 
 let fecha = day.getDate() + '-' + day.getMonth() + '-' + day.getFullYear();
 
-let hora = day.getHours() + ':' + day.getMinutes();
+let hora = day.getHours()
+let minuts= day.getMinutes() ;
+console.log(hora);
 
 
 // LUEGO OCULTARE EL QUE NO TOQUE.. Y SABRÉ CUAL TENGO QUE ESCUCHAR
@@ -45,10 +47,10 @@ function retirarProducto(e,idProducto){
 }
 
 function horaM(horaMenu){
-    let tarda = document.getElementById("tarda");
     let mati = document.getElementById("mati");
-    if(horaMenu <="11:30"){
-        
+    let tarda = document.getElementById("tarda");
+    if(horaMenu <=11 ){
+       
         tarda.style.display = "none";
 
         return "mati";
@@ -58,7 +60,7 @@ function horaM(horaMenu){
         return "tarda";
     }
 }
-
+//console.log (hora<"11:30");
 function actualizarCarrito(){
     htmlStr="";
     linputs= document.querySelectorAll("#form :input");

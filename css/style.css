@@ -56,7 +56,7 @@
 .footer .twitter{
   font-size: 45px;
   font-weight: bold;
-  margin-left: 860px; 
+  margin-left: 885px; 
   color: black;
   padding: 12px;
   text-decoration: none;
@@ -107,11 +107,14 @@
   display: inline;
 }
 
-
-
-#form{
+#mati{
   display:  inline-grid;
-  margin-left: 400px;
+  margin-left: 700px;
+}
+
+#tarda{
+  display:  inline-grid;
+  margin-left: 700px;
 }
 .h1menu{
   text-align:center;
