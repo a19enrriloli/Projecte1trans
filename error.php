@@ -14,7 +14,7 @@
     <?php 
         include("header.php");
     ?>
-                
+     <img  src="img/error.png" alt="Logo pp" width="300px" class="center"  >    
     <h1 style="text-align:center;">Error, ja has fet una comanda</h1>
     <h2 style="text-align:center;">Espera a demà per tornar a demanar </h2>
     <div style="text-align:center;">
