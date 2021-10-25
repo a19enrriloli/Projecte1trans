@@ -58,13 +58,13 @@ include("header.php");
                 </div>
             </div>
     </div>
-    <input type="submit" id="submit" name="boton" value="enviar">
+
         </form>
     </div>
     <div>
         <form action="Final_Comanda.php">
             <br><br>
-            <input type="submit" name="boton" value="siguiente">
+            <input type="submit" name="boton" value="enviar">
         </form>
     </div>
     <div>
