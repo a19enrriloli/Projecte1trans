@@ -39,6 +39,8 @@ function retirarProducto(e,idProducto){
     }
 }
 
+
+// FUNCION QUE MOSTRARA EL MENU DE MAÑANA O MEDIODIA SEGUN LA HORA 
 function horaMenu(){
     
     let day = new Date();
@@ -62,8 +64,8 @@ function horaMenu(){
         return "mati";
         
     }else{
-        mati.style.display = "none";
-        return "tarda";
+        tarda.style.display = "none";
+        return "mati";
     }
 }
 
