@@ -48,8 +48,8 @@ function horaMenu(){
     let hora = day.getHours();
     let minuts= day.getMinutes() ;
 
-    console.log(hora);
-    console.log(minuts);
+    console.log('hora ' + hora + ':' + minuts);
+    //console.log(minuts);
     let mati = document.getElementById("mati");
     let tarda = document.getElementById("tarda");
     if(hora < 11  ){
@@ -67,6 +67,7 @@ function horaMenu(){
         return "tarda";
     }
 }
+
 
 
 
