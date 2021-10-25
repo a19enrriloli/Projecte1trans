@@ -110,8 +110,11 @@ body {
 } */
 
 #mati{
-  display:  inline-grid;
-  margin-left: 700px;
+  display: grid;
+  margin-left: 100px;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: max-content; */
+  grid-gap: 10px;
 }
 
 #tarda{
@@ -123,3 +126,6 @@ body {
   width: 1800px;
 }
 
+h2{
+  height: 50px;
+}
