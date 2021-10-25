@@ -79,21 +79,15 @@ function horaMenu(){
 
     console.log('hora ' + hora + ':' + minuts);
     //console.log(minuts);
-    let mati = document.getElementById("mati");
-    let tarda = document.getElementById("tarda");
+    let mati = document.getElementsByClassName("mati")
+    let tarda = document.getElementsByClassName("tarda")
     if(hora < 11  ){
-    //////    CAMBIAR !!!! ////
-        tarda.style.display = "none";
-        //mati.style.display = "flex";
-
-        return "mati";
-    }else if(hora==11 && minuts <=30){
-        tarda.style.display = "none";
-        //mati.style.display = "flex";
-        return "mati";
-        
-    }else{
-        tarda.style.display = "none";
-        return "mati";
+        if(mati = "mati"){
+           tarda.style.display='none'; 
+        }else{
+            mati.style.display='none'; 
+        }
+    
+    
     }
 }
