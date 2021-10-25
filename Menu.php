@@ -26,12 +26,13 @@ if(isset($_COOKIE["comanda"])){
    
     <form id='mati'>
     <h2>Productes mati </h2>
+    
     <?php
         $data = file_get_contents("admin/Pmati.json");
         $products = json_decode($data, true);
        foreach ($products as $prod) {
-            echo "<div  id='".$prod["id"]."'>".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
+            echo "<div  id='".$prod["id"]."' style='margin-top: 15px'>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=300px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";

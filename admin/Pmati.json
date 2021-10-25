@@ -47,10 +47,10 @@
 	},
 
 	{
-		"nom": "Donuts (2 unitats)",
-		"preu": "1.50",
+		"nom": "Croissant ",
+		"preu": "1.00",
 		"torn": "pati",
-		"ruta": "donuts.jpg",
+		"ruta": "croissant.jpg",
 		"id": "p3"
 	}
 ]
