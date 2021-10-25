@@ -53,11 +53,12 @@ function horaMenu(){
     if(hora < 11  ){
        
         tarda.style.display = "none";
+        //mati.style.display = "flex";
 
         return "mati";
     }else if(hora==11 && minuts <=30){
         tarda.style.display = "none";
-
+        //mati.style.display = "flex";
         return "mati";
         
     }else{

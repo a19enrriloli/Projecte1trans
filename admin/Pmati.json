@@ -1,24 +1,56 @@
 [
 	{
-		"nom": "producte1",
-		"preu": "0.90",
+		"nom": "Entrepà de pernil amb formatge",
+		"preu": "1.50",
 		"torn": "pati",
-		"ruta": "producte1.jpg",
+		"ruta": "boc_jamonyqueso.jpg",
 		"id": "p1"
 	},
 	{
-		"nom": "producte2",
-		"preu": "2.50",
+		"nom": "Llauna CocaCola",
+		"preu": "0.90",
 		"torn": "dinar",
-		"ruta": "producte2.jpg",
+		"ruta": "cocacola.jpg",
 		"id": "p2"
 	},
 
 	{
-		"nom": "producte3",
+		"nom": "Entrepà Truita",
+		"preu": "1.80",
+		"torn": "pati",
+		"ruta": "boc_tortilla2.jpg",
+		"id": "p3"
+	},
+
+	{
+		"nom": "Suc de préssec",
+		"preu": "1.00",
+		"torn": "pati",
+		"ruta": "zumo_melocoton.jpg",
+		"id": "p3"
+	},
+
+	{
+		"nom": "Entrepà de tonyina",
 		"preu": "1.50",
 		"torn": "pati",
-		"ruta": "producte3.jpg",
+		"ruta": "boc_atun.jpg",
+		"id": "p3"
+	},
+
+	{
+		"nom": "Donuts (2 unitats)",
+		"preu": "1.50",
+		"torn": "pati",
+		"ruta": "donuts.jpg",
+		"id": "p3"
+	},
+
+	{
+		"nom": "Croissant ",
+		"preu": "1.00",
+		"torn": "pati",
+		"ruta": "croissant.jpg",
 		"id": "p3"
 	}
 ]
