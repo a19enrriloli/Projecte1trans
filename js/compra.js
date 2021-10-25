@@ -66,14 +66,6 @@ function horaMenu(){
     }
 }
 
-
-
-
-var Pmati = JSON.parse(Pmati);
-var Ptarda = JSON.parse(Ptarda);
-
-
-
 function crearTiquet(e,idProducto){
 
     let tiquet = document.getElementById("tiquet");
