@@ -24,14 +24,14 @@ if(isset($_COOKIE["comanda"])){
     </div>
 
    <!-- Creamos dos formularios donde mostraremos los productos guardados en nuestro archivo JSON -->
-    <form id='mati'>
+    <form>
     <h2>Productes mati </h2>
     
     <?php
-        $data = file_get_contents("admin/Pmati.json");
+        $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
        foreach ($products as $prod) {
-            echo "<div  id='".$prod["id"]."' style='margin-top: 15px'>".$prod["nom"]."</br>";
+            echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
             echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=300px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
@@ -44,9 +44,10 @@ if(isset($_COOKIE["comanda"])){
     </form>
     <!-- Form de tarda -->
     <?php
-        $data = file_get_contents("admin/Pmati.json");
+        $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
-        echo "<div id=datosjson > ".$data."</div>";
+        echo "<div id='datosjson' > ".$data."</div>";
+        echo "<div id='torn' > ".$products["torn"]."</div>";
     ?>
     <div id="tiquet"></div>
     <div>
