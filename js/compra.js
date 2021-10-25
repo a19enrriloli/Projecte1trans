@@ -20,14 +20,12 @@ carrito.addEventListener('click', e => {
         retirarProducto(e,e.target.parentNode.id);
        
     }
-    if (e.target.getElementsByClassName("Caixatiquet") != 0){
-        crearTiquet(e,e.target.parentNode.id);
-    }
 });
 
 function añadirProducto(e,idProducto){
 
     document.getElementById("i"+idProducto).value++;
+    crearTiquet();
 
 }
 
@@ -35,12 +33,39 @@ function retirarProducto(e,idProducto){
 
     if (document.getElementById("i"+idProducto).value>0){
         document.getElementById("i"+idProducto).value--;
+        crearTiquet();
 
     }
 }
 
+function crearTiquet(datosMenu){
 
-// FUNCION QUE MOSTRARA EL MENU DE MAÑANA O MEDIODIA SEGUN LA HORA 
+    let tiquet = document.getElementById("tiquet");
+    let Cantidad = document.getElementsByClassName("Caixatiquet");
+    let txt = "";
+    let PreuT = 0;
+    let i = 0;
+    while(i < Cantidad.length){
+        if(Cantidad[i].value != 0){
+            txt += "Article: " + datosMenu[Cantidad[i].parentNode.id].nom;
+            txt += "<br>";
+            txt += "Unitats: " + Cantidad[index].value;
+            txt += "<br>";
+            txt += "preu Unitari: " + datosMenu[Cantidad[i].parentNode.id].preu;
+            txt += "<br>";
+            txt += "Preu total: " + datosMenu[Cantidad[i].parentNode.id].preu * Cantidad[i].value + "€";
+            txt += "<br>";
+            preuT += datosMenu[Cantidad[i].parentNode.id].preu * Cantidad[i].value;
+            txt += "<br>";
+        }
+    i++;
+    }
+    txt += "Preu Total: " + PreuT + "€";
+    tiquet.innerHTML = txt;
+
+}
+
+
 function horaMenu(){
     
     let day = new Date();
@@ -67,17 +92,4 @@ function horaMenu(){
         tarda.style.display = "none";
         return "mati";
     }
-}
-
-function crearTiquet(e,idProducto){
-
-    let tiquet = document.getElementById("tiquet");
-    let Ctiquet = document.getElementsByClassName("Caixatiquet");
-    let txt = "";
-    for(let i = 0 ; i <= Ctiquet.length ; i++){
-        if(Ctiquet[i].value != 0){
-            txt += "Nom: "+idProducto;
-        }
-    }
-    tiquet.innerHTML = txt;
 }
