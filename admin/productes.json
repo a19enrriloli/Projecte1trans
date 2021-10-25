@@ -1,0 +1,104 @@
+[	
+	{
+		"nom": "Entrepà de pernil amb formatge",
+		"preu": "1.50",
+		"torn": "mati",
+		"ruta": "boc_jamonyqueso.jpg",
+		"id": "p1"
+	},
+	{
+		"nom": "Llauna CocaCola",
+		"preu": "0.90",
+		"torn": "dinar",
+		"ruta": "cocacola.jpg",
+		"id": "p2"
+	},
+
+	{
+		"nom": "Entrepà Truita",
+		"preu": "1.80",
+		"torn": "mati",
+		"ruta": "boc_tortilla2.jpg",
+		"id": "p3"
+	},
+
+	{
+		"nom": "Suc de préssec",
+		"preu": "1.00",
+		"torn": "mati",
+		"ruta": "zumo_melocoton.jpg",
+		"id": "p4"
+	},
+
+	{
+		"nom": "Entrepà de tonyina",
+		"preu": "1.50",
+		"torn": "mati",
+		"ruta": "boc_atun.jpg",
+		"id": "p5"
+	},
+
+	{
+		"nom": "Donuts (2 unitats)",
+		"preu": "1.50",
+		"torn": "mati",
+		"ruta": "donuts.jpg",
+		"id": "p6"
+	},
+
+	{
+		"nom": "Croissant ",
+		"preu": "1.00",
+		"torn": "mati",
+		"ruta": "croissant.jpg",
+		"id": "p7"
+	},
+
+	{
+		"nom": "Café ",
+		"preu": "1.00",
+		"torn": "mati",
+		"ruta": "cafe.png",
+		"id": "p8"
+	},
+
+	{
+		"nom": "producte1",
+		"preu": "0.90",
+		"torn": "tarda",
+		"ruta": "producte11.jpg",
+		"id": "p9"
+	},
+
+	{
+		"nom": "producte2",
+		"preu": "2.50",
+		"torn": "tarda",
+		"ruta": "producte22.jpg",
+		"id": "p10"
+	},
+
+	{
+		"nom": "producte3",
+		"preu": "1.50",
+		"torn": "tarda",
+		"ruta": "producte33.jpg",
+		"id": "p11"
+	},
+
+	{
+		"nom": "producte4",
+		"preu": "1.50",
+		"torn": "tarda",
+		"ruta": "producte3.jpg",
+		"id": "p12"
+	},
+
+	{
+		"nom": "producte5",
+		"preu": "1.50",
+		"torn": "tarda",
+		"ruta": "producte3.jpg",
+		"id": "p3"
+	}
+]
