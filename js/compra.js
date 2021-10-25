@@ -25,6 +25,7 @@ carrito.addEventListener('click', e => {
         retirarProducto(e,e.target.parentNode.id);
     }
 
+    }
 });
 
 function añadirProducto(e,idProducto){
@@ -77,5 +78,26 @@ function actualizarCarrito(){
         }
     }
 }
+
+
+var Pmati = JSON.parse(Pmati);
+var Ptarda = JSON.parse(Ptarda);
+
+
+
+function crearTiquet(){
+
+    let tiquet = document.getElementById("tiquet");
+    let Ctiquet = document.getElementsByClassName("Caixatiquet");
+    let txt = "";
+    for(let i = 0 ; i <= Ctiquet.length ; i++){
+        if(Ctiquet[i].value != 0){
+            txt += "Nom: ";
+        }
+    }
+    tiquet.innerHTML = txt;
+}
+
+
 
 
