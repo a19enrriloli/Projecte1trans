@@ -85,7 +85,7 @@ function horaMenu(){
         if(mati = "mati"){
            tarda.style.display='none'; 
         }else{
-            mati.style.display='none'; 
+            çmati.style.display='none'; 
         }
     
     
