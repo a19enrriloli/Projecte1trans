@@ -1,6 +1,6 @@
 
 
-//AQUI TENGO QIE PONER EL CODIGO PARA DECIDIR SI ES MAÑANA O TARDE 
+
 
 
 
@@ -17,13 +17,14 @@ carrito.addEventListener('click', e => {
         console.log("Has añadido el producto");
         console.log(e.target.parentNode.id); 
         añadirProducto(e,e.target.parentNode.id);
+     
 
     }else if (e.target.classList.contains('treure')){
         console.log("Has retirado el producto");
         console.log(e.target.parentNode.id);
         retirarProducto(e,e.target.parentNode.id);
+       
     }
-
 });
 
 function añadirProducto(e,idProducto){
@@ -66,14 +67,6 @@ function horaMenu(){
         return "tarda";
     }
 }
-function actualizarCarrito(){
-    htmlStr="";
-    linputs= document.querySelectorAll("#form :input");
-    for (let index=0; index <linputs.lenght;index++){
-        const element = linputs [index];
-        if (element.value>0){
-            htmlStr="Producto ".datos.productos[index].nombre + " --> "+ element.value + "unidades <br>";
-        }
-    }
-}
+
+
 
