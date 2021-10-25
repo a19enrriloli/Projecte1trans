@@ -35,7 +35,7 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" id="nom" maxlength="30" required/>
+                    <input type="text" id="nom" maxlength="30" required placeholder="Pepe"/>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" id="telefon" maxlength="30" required/>
+                    <input type="text" id="telefon" maxlength="30" required placeholder="+34 000000000"/>
                 </div>
             </div>
             <div class="div1">
@@ -54,19 +54,17 @@ include("header.php");
                 </div>
                 <div>
                     <br>
-                    <input type="text" id="email" maxlength="30" required/>
+                    <input type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
                 </div>
             </div>
-    </div>
-    <input type="submit" id="submit" name="boton" value="enviar">
-        </form>
     </div>
     <div>
         <form action="Final_Comanda.php">
             <br><br>
-            <input type="submit" name="boton" value="siguiente">
-        </form>
+            <input type="submit" name="boton" value="enviar">
+        </form>  
     </div>
+    
     <div>
         <form action="Menu.php">
             <br><br>

@@ -37,28 +37,17 @@ if(isset($_COOKIE["comanda"])){
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
+            
         }
+       
     ?>
     </form>
-
-    <form id='tarda'>
-    <h2>Productes tarda </h2>
+    <!-- Form de tarda -->
     <?php
-        $data = file_get_contents("admin/Ptarda.json");
-        $products = json_decode($data, true);        
-     
-        foreach ($products as $prod) {
-
-            echo "<div  id='".$prod["id"]."'>".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
-            echo $prod["preu"]."€ <br>";
-            echo "<input type='button' value='+' class='afegir'></input>";
-            echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
-            echo "<input type='button' value='-' class='treure'></input><br><br></div>";
-        }
+        $data = file_get_contents("admin/Pmati.json");
+        $products = json_decode($data, true);
+        echo "<div id=datosjson > ".$data."</div>";
     ?>
-    </form>
-
     <div id="tiquet"></div>
     <div>
         <form action="Validacio.php">
