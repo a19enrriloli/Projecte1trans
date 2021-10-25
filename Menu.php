@@ -23,9 +23,8 @@ if(isset($_COOKIE["comanda"])){
         <h1 class="h1menu">Menu</h1>
     </div>
 
-   <!-- Creamos dos formularios donde mostraremos los productos guardados en nuestro archivo JSON -->
+   <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
     <form>
-    <h2>Productes mati </h2>
     
     <?php
         $data = file_get_contents("admin/productes.json");
