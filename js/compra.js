@@ -25,11 +25,7 @@ carrito.addEventListener('click', e => {
         retirarProducto(e,e.target.parentNode.id);
        
     }
-<<<<<<< HEAD
 
-    }
-=======
->>>>>>> bc85cdd61ed96dd08a16118130fd57da24d0e66b
 });
 
 function añadirProducto(e,idProducto){
