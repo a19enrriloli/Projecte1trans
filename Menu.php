@@ -34,7 +34,7 @@ if(isset($_COOKIE["comanda"])){
             echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
-            echo "<input type='text' value='0' id='i".$prod["id"]."'>";
+            echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
     ?>
@@ -52,12 +52,13 @@ if(isset($_COOKIE["comanda"])){
             echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=200px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
-            echo "<input type='text' value='0' id='i".$prod["id"]."'>";
+            echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
     ?>
     </form>
 
+    <div id="tiquet"></div>
     <div>
         <form action="Validacio.php">
             <br><br>
@@ -73,6 +74,7 @@ if(isset($_COOKIE["comanda"])){
 
 
 <script type="text/javascript" src="js/compra.js"></script>
+
 
 </body>
 <?php
