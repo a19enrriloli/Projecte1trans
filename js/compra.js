@@ -2,9 +2,9 @@
 // LUEGO OCULTARE EL QUE NO TOQUE.. Y SABRÉ CUAL TENGO QUE ESCUCHAR
 
 
-let mati_o_tarda = horaMenu();
+let hora = horaMenu();
 
-let carrito = document.getElementById(mati_o_tarda);
+let carrito = document.getElementById(hora);
  
 let datosMenu = document.getElementById("datosMenu");
 
@@ -27,7 +27,7 @@ carrito.addEventListener('click', e => {
 function añadirProducto(e,idProducto){
 
     document.getElementById("i"+idProducto).value++;
-        crearTiquetTarda();
+        crearTiquet();
 
 }
 
@@ -79,15 +79,27 @@ function horaMenu(){
 
     console.log('hora ' + hora + ':' + minuts);
     //console.log(minuts);
-    let mati = document.getElementsByClassName("mati")
-    let tarda = document.getElementsByClassName("tarda")
+    let mati = document.getElementsByClassName("mati");
+    let tarda = document.getElementsByClassName("tarda");
     if(hora < 11  ){
-        if(mati = "mati"){
-           tarda.style.display='none'; 
-        }else{
-            çmati.style.display='none'; 
+
+        for(let i=0;i < mati.length;i++){
+            tarda[i].style.display='none';
         }
+        
+    }else if(hora==11 && minuts<=30){
+
+        for(let i=0;i < mati.length;i++){
+            tarda[i].style.display='none';
+        }
+        
+    }else{
+        for(let i=0;i < mati.length;i++){
+            mati[i].style.display='none';
+        }
+        
+    }
     
     
     }
-}
+
