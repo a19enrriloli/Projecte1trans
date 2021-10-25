@@ -5,6 +5,8 @@
 let mati_o_tarda = horaMenu();
 
 let carrito = document.getElementById(mati_o_tarda);
+ 
+let datosMenu = document.getElementById("datosMenu");
 
 carrito.addEventListener('click', e => {
 
@@ -25,7 +27,7 @@ carrito.addEventListener('click', e => {
 function añadirProducto(e,idProducto){
 
     document.getElementById("i"+idProducto).value++;
-    crearTiquet();
+        crearTiquetTarda();
 
 }
 
@@ -34,9 +36,11 @@ function retirarProducto(e,idProducto){
     if (document.getElementById("i"+idProducto).value>0){
         document.getElementById("i"+idProducto).value--;
         crearTiquet();
-
     }
+
+
 }
+
 
 function crearTiquet(datosMenu){
 
