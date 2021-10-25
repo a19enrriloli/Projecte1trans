@@ -1,9 +1,4 @@
 
-
-
-
-
-
 // LUEGO OCULTARE EL QUE NO TOQUE.. Y SABRÉ CUAL TENGO QUE ESCUCHAR
 
 
@@ -25,7 +20,9 @@ carrito.addEventListener('click', e => {
         retirarProducto(e,e.target.parentNode.id);
        
     }
-
+    if (e.target.getElementsByClassName("Caixatiquet") != 0){
+        crearTiquet(e,e.target.parentNode.id);
+    }
 });
 
 function añadirProducto(e,idProducto){
@@ -77,19 +74,15 @@ var Ptarda = JSON.parse(Ptarda);
 
 
 
-function crearTiquet(){
+function crearTiquet(e,idProducto){
 
     let tiquet = document.getElementById("tiquet");
     let Ctiquet = document.getElementsByClassName("Caixatiquet");
     let txt = "";
     for(let i = 0 ; i <= Ctiquet.length ; i++){
         if(Ctiquet[i].value != 0){
-            txt += "Nom: ";
+            txt += "Nom: "+idProducto;
         }
     }
     tiquet.innerHTML = txt;
 }
-
-
-
-
