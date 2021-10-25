@@ -89,7 +89,7 @@ function horaMenu(){
         return "mati";
         
     }else{
-        mati.style.display = "none";
-        return "tarda";
+        tarda.style.display = "none";
+        return "mati";
     }
 }

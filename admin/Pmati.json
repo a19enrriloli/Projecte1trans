@@ -27,7 +27,7 @@
 		"preu": "1.00",
 		"torn": "pati",
 		"ruta": "zumo_melocoton.jpg",
-		"id": "p3"
+		"id": "p4"
 	},
 
 	{
@@ -35,7 +35,7 @@
 		"preu": "1.50",
 		"torn": "pati",
 		"ruta": "boc_atun.jpg",
-		"id": "p3"
+		"id": "p5"
 	},
 
 	{
@@ -43,7 +43,7 @@
 		"preu": "1.50",
 		"torn": "pati",
 		"ruta": "donuts.jpg",
-		"id": "p3"
+		"id": "p6"
 	},
 
 	{
@@ -51,6 +51,14 @@
 		"preu": "1.00",
 		"torn": "pati",
 		"ruta": "croissant.jpg",
-		"id": "p3"
+		"id": "p7"
+	},
+
+	{
+		"nom": "Café ",
+		"preu": "1.00",
+		"torn": "pati",
+		"ruta": "cafe.png",
+		"id": "p8"
 	}
 ]
