@@ -17,6 +17,7 @@ carrito.addEventListener('click', e => {
         console.log("Has añadido el producto");
         console.log(e.target.parentNode.id); 
         añadirProducto(e,e.target.parentNode.id);
+        actualizarCarrito();
 
     }else if (e.target.classList.contains('treure')){
         console.log("Has retirado el producto");
@@ -47,8 +48,8 @@ function horaMenu(){
     let hora = day.getHours();
     let minuts= day.getMinutes() ;
 
-    console.log(hora);
-    console.log(minuts);
+    console.log('hora ' + hora + ':' + minuts);
+    //console.log(minuts);
     let mati = document.getElementById("mati");
     let tarda = document.getElementById("tarda");
     if(hora < 11  ){
@@ -76,4 +77,5 @@ function actualizarCarrito(){
         }
     }
 }
+
 
