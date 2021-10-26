@@ -8,7 +8,6 @@ let carrito = horaMenu();
 let datosMenu = document.getElementById("datosjson").textContent;
 
 datosMenu = JSON.parse(datosMenu);
-console.log(datosMenu);
 
 
 document.addEventListener('click', e => {
