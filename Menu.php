@@ -49,7 +49,7 @@ if(isset($_COOKIE["comanda"])){
             <script type="text/javascript" src="js/compra.js"></script>
         </div>
         <div>
-        <input type="button"  href="Pagina_Principal.php" value='atras'></button>
+        <input type="button"  href="index.php" value='atras'></input>
         </div>
     </form>
     <!-- Form de tarda -->

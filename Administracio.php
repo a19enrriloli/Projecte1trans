@@ -20,7 +20,7 @@
         </div>
     </div>
     <div>
-        <a href="Pagina_Principal.php"><b> Return </b></a>
+        <a href="index.php"><b> Return </b></a>
     </div>
     
 </body>

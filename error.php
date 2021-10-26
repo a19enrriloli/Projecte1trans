@@ -18,7 +18,7 @@
     <h1 style="text-align:center;">Error, ja has fet una comanda</h1>
     <h2 style="text-align:center;">Espera a demà per tornar a demanar </h2>
     <div style="text-align:center;">
-        <form action="Pagina_Principal.php">
+        <form action="index.php">
             <br><br>
             <input type="submit" name="boton" value="<-">
         </form>

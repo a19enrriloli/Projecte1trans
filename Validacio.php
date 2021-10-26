@@ -26,7 +26,10 @@ include("header.php");
         <div>
             <h1>Validacio</h1>
         </div>
-
+        <?php
+            $data = file_get_contents("admin/productes.json");
+            $products = json_decode($data, true);
+            ?>
     <div>
         <form method="POST" >
             <div class="div1">
