@@ -23,12 +23,7 @@ if(isset($_COOKIE["comanda"])){
         <h1 class="h1menu">Menu</h1>
     </div>
 
-<<<<<<< Updated upstream
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
-=======
-   <!-- Creamos dos formularios donde mostraremos los productos guardados en nuestro archivo JSON -->
-
->>>>>>> Stashed changes
     <form>
     
     <?php
@@ -46,13 +41,13 @@ if(isset($_COOKIE["comanda"])){
        
     ?>
     </form>
+    <div id="tiquet"></div>
     <!-- Form de tarda -->
     <?php
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         echo "<div id='datosjson' > ".$data."</div>";
     ?>
-    <div id="tiquet"></div>
     <div>
         <form action="Validacio.php">
             <br><br>
