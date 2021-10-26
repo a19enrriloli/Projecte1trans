@@ -29,9 +29,26 @@ include("header.php");
         <?php
             $data = file_get_contents("admin/productes.json");
             $products = json_decode($data, true);
+            $preuT=0;
+            foreach ($_POST as $id => $value){
+                if($value!=0){
+                    echo "Nombre de producto: ".$products[$id]["nom"].
+                    "<br>".
+                    "Unitats: ".$value.
+                    "<br>".
+                    "Preu unitari: ".$products[$id]["preu"]."$".
+                    "<br>".
+                    "Preu total: ".$products[$id]["preu"]*$value."$".
+                    "<br><br>";
+                    $preuT+=$products*.$value."$".
+                }
+
+            }
+            "<br><br>";
+            echo "Preu total de los productos: ".$preuT.
             ?>
     <div>
-        <form method="POST" >
+        <form method="POST" action="Final_Comanda.php" >
             <div class="div1">
                 <div class="div2">
                     <p>Nom</p>
