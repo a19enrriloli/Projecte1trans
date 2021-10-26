@@ -2,13 +2,12 @@
 // LUEGO OCULTARE EL QUE NO TOQUE.. Y SABRÉ CUAL TENGO QUE ESCUCHAR
 
 
-let hora = horaMenu();
 
-let carrito = document.getElementById(hora);
+let carrito = horaMenu();
  
-let datosMenu = document.getElementById("datosMenu");
+let datosMenu = document.getElementById("datosjson");
 
-carrito.addEventListener('click', e => {
+document.addEventListener('click', e => {
 
     if(e.target.classList.contains('afegir')){
         console.log("Has añadido el producto");
@@ -53,7 +52,7 @@ function crearTiquet(datosMenu){
         if(Cantidad[i].value != 0){
             txt += "Article: " + datosMenu[Cantidad[i].parentNode.id].nom;
             txt += "<br>";
-            txt += "Unitats: " + Cantidad[index].value;
+            txt += "Unitats: " + Cantidad[i].value;
             txt += "<br>";
             txt += "preu Unitari: " + datosMenu[Cantidad[i].parentNode.id].preu;
             txt += "<br>";
@@ -74,32 +73,32 @@ function horaMenu(){
     
     let day = new Date();
     
-    let hora = day.getHours();
+    let horaM = day.getHours();
     let minuts= day.getMinutes() ;
 
-    console.log('hora ' + hora + ':' + minuts);
+    console.log('hora ' + horaM + ':' + minuts);
     //console.log(minuts);
     let mati = document.getElementsByClassName("mati");
     let tarda = document.getElementsByClassName("tarda");
-    if(hora < 11  ){
+    if(horaM < 11  ){
 
-        for(let i=0;i < mati.length;i++){
+        for(let i=0;i < tarda.length;i++){
             tarda[i].style.display='none';
         }
         
-    }else if(hora==11 && minuts<=30){
+    }else if(horaM==11 && minuts<=30){
 
-        for(let i=0;i < mati.length;i++){
+        for(i=0;i < mati.length;i++){
             tarda[i].style.display='none';
         }
         
     }else{
-        for(let i=0;i < mati.length;i++){
+        for(i=0;i < mati.length;i++){
             mati[i].style.display='none';
         }
         
     }
     
-    
+    return horaM;
 }
 
