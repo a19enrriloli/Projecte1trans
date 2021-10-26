@@ -24,7 +24,7 @@ if(isset($_COOKIE["comanda"])){
     </div>
 
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
-    <form>
+   <form action="Validacio.php" method="post">
     
     <?php
         $data = file_get_contents("admin/productes.json");
@@ -37,28 +37,21 @@ if(isset($_COOKIE["comanda"])){
             echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
             
+            
         }
-       
+        echo "<div><input type='submit' name='boton' value='siguiente'></input><br><br></div>";
     ?>
-    </form>
-    <div id="tiquet"></div>
+    <div  id="tiquet"></div>
     <!-- Form de tarda -->
+    <!--
     <?php
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         echo "<div id='datosjson' > ".$data."</div>";
     ?>
+    -->
     <div>
-        <form action="Validacio.php">
-            <br><br>
-            <input type="submit" name="boton" value="siguiente">
-        </form>
-    </div>
-    <div>
-        <form action="Pagina_Principal.php">
-            <br><br>
-            <input type="submit" name="boton" value="atras">
-        </form>
+    <input type="button"  href="Pagina_Principal.php" value='atras'></button>
     </div>
 
 
