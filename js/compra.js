@@ -8,7 +8,7 @@ let carrito = horaMenu();
 let datosMenu = document.getElementById("datosjson").textContent;
 
 datosMenu = JSON.parse(datosMenu);
-
+console.log(datosMenu);
 
 document.addEventListener('click', e => {
 
@@ -57,7 +57,7 @@ function crearTiquet(datosMenu){
             txt += "<br>";
             txt += "Unitats: " + cajasTExto[i].value;
             txt += "<br>";
-            txt += "preu Unitari: " + datosMenu[i].preu;
+            txt += "Preu Unitari: " + datosMenu[i].preu + "€";
             txt += "<br>";
             txt += "Preu total: " + datosMenu[i].preu * cajasTExto[i].value + "€";
             txt += "<br>";
@@ -66,7 +66,7 @@ function crearTiquet(datosMenu){
         }
     i++;
     }
-    txt += "Preu Total: " + preuT + "€";
+    txt += "IMPORT: " + preuT + "€";
     tiquet.innerHTML = txt;
 
 }
