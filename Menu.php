@@ -56,7 +56,7 @@ if(isset($_COOKIE["comanda"])){
    
         
    
-
+        <p>hola</p>
 
 </body>
 <?php
