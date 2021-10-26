@@ -5,7 +5,11 @@
 
 let carrito = horaMenu();
  
-let datosMenu = document.getElementById("datosjson");
+let datosMenu = document.getElementById("datosjson").textContent;
+
+datosMenu = JSON.parse(datosMenu);
+console.log(datosMenu);
+
 
 document.addEventListener('click', e => {
 
@@ -13,20 +17,20 @@ document.addEventListener('click', e => {
         console.log("Has añadido el producto");
         console.log(e.target.parentNode.id); 
         añadirProducto(e,e.target.parentNode.id);
-     
+
 
     }else if (e.target.classList.contains('treure')){
         console.log("Has retirado el producto");
         console.log(e.target.parentNode.id);
         retirarProducto(e,e.target.parentNode.id);
-       
+
     }
 });
 
 function añadirProducto(e,idProducto){
 
     document.getElementById("i"+idProducto).value++;
-        crearTiquet();
+    crearTiquet(datosMenu);
 
 }
 
@@ -34,9 +38,9 @@ function retirarProducto(e,idProducto){
 
     if (document.getElementById("i"+idProducto).value>0){
         document.getElementById("i"+idProducto).value--;
-        crearTiquet();
-    }
+        crearTiquet(datosMenu);
 
+    }
 
 }
 
@@ -44,26 +48,26 @@ function retirarProducto(e,idProducto){
 function crearTiquet(datosMenu){
 
     let tiquet = document.getElementById("tiquet");
-    let Cantidad = document.getElementsByClassName("Caixatiquet");
+    let cajasTExto = document.getElementsByClassName("Caixatiquet");
     let txt = "";
-    let PreuT = 0;
+    let preuT = 0;
     let i = 0;
-    while(i < Cantidad.length){
-        if(Cantidad[i].value != 0){
-            txt += "Article: " + datosMenu[Cantidad[i].parentNode.id].nom;
+    while(i < cajasTExto.length){
+        if(cajasTExto[i].value != 0){
+            txt += "Article: " + datosMenu[i].nom;
             txt += "<br>";
-            txt += "Unitats: " + Cantidad[i].value;
+            txt += "Unitats: " + cajasTExto[i].value;
             txt += "<br>";
-            txt += "preu Unitari: " + datosMenu[Cantidad[i].parentNode.id].preu;
+            txt += "preu Unitari: " + datosMenu[i].preu;
             txt += "<br>";
-            txt += "Preu total: " + datosMenu[Cantidad[i].parentNode.id].preu * Cantidad[i].value + "€";
+            txt += "Preu total: " + datosMenu[i].preu * cajasTExto[i].value + "€";
             txt += "<br>";
-            preuT += datosMenu[Cantidad[i].parentNode.id].preu * Cantidad[i].value;
+            preuT += datosMenu[i].preu * cajasTExto[i].value;
             txt += "<br>";
         }
     i++;
     }
-    txt += "Preu Total: " + PreuT + "€";
+    txt += "Preu Total: " + preuT + "€";
     tiquet.innerHTML = txt;
 
 }
