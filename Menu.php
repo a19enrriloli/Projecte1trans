@@ -23,7 +23,12 @@ if(isset($_COOKIE["comanda"])){
         <h1 class="h1menu">Menu</h1>
     </div>
 
+<<<<<<< Updated upstream
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
+=======
+   <!-- Creamos dos formularios donde mostraremos los productos guardados en nuestro archivo JSON -->
+
+>>>>>>> Stashed changes
     <form>
     
     <?php
@@ -31,7 +36,7 @@ if(isset($_COOKIE["comanda"])){
         $products = json_decode($data, true);
        foreach ($products as $prod) {
             echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
-            echo "<img src='img/productes/".$prod["ruta"]."' width=300px height=300px></br>"; 
+            echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>"; 
             echo $prod["preu"]."€ <br>";
             echo "<input type='button' value='+' class='afegir'></input>";
             echo "<input type='text' value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
@@ -46,7 +51,6 @@ if(isset($_COOKIE["comanda"])){
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         echo "<div id='datosjson' > ".$data."</div>";
-        echo "<div id='torn' > ".$products["torn"]."</div>";
     ?>
     <div id="tiquet"></div>
     <div>
