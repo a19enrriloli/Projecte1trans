@@ -38,14 +38,14 @@ include("header.php");
                     "<br>".
                     "Preu unitari: ".$products[$id]["preu"]."$".
                     "<br>".
-                    "Preu total: ".$products[$id]["preu"]*$value."$".
+                    "Preu total: ".$products[$id]["preu"]*$value."".
                     "<br><br>";
-                    $preuT+=$products*.$value."$".
+                   
                 }
 
             }
             "<br><br>";
-            echo "Preu total de los productos: ".$preuT.
+           
             ?>
     <div>
         <form method="POST" action="Final_Comanda.php" >
