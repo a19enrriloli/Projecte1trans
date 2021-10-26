@@ -104,10 +104,11 @@ body {
   display: inline;
 }
 
-/* form {
+form {
   display: inline-grid;
-  margin: 400;
-} */
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 30px;
+} 
 
 /* #form_productes{
   width: 650px;

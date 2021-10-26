@@ -41,18 +41,22 @@ if(isset($_COOKIE["comanda"])){
         }
         echo "<div><input type='submit' name='boton' value='siguiente'></input><br><br></div>";
     ?>
+
     <div  id="tiquet"></div>
+    <div>
+    <input type="button"  href="Pagina_Principal.php" value='atras'></button>
+    </div>
+    </form>
     <!-- Form de tarda -->
     <!--
+        
     <?php
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         echo "<div id='datosjson' > ".$data."</div>";
     ?>
     -->
-    <div>
-    <input type="button"  href="Pagina_Principal.php" value='atras'></button>
-    </div>
+   
 
 
 <script type="text/javascript" src="js/compra.js"></script>
