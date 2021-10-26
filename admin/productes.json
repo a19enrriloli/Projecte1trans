@@ -66,7 +66,7 @@
 		"nom": "producte1",
 		"preu": "0.90",
 		"torn": "tarda",
-		"ruta": "producte11.jpg",
+		"ruta": "hamburguesa.jpg",
 		"id": "p9"
 	},
 
@@ -74,7 +74,7 @@
 		"nom": "producte2",
 		"preu": "2.50",
 		"torn": "tarda",
-		"ruta": "producte22.jpg",
+		"ruta": "pizza.jpg",
 		"id": "p10"
 	},
 
@@ -82,7 +82,7 @@
 		"nom": "producte3",
 		"preu": "1.50",
 		"torn": "tarda",
-		"ruta": "producte33.jpg",
+		"ruta": "plato_tortilla.jpg",
 		"id": "p11"
 	},
 
