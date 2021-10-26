@@ -33,11 +33,12 @@ if(isset($_COOKIE["comanda"])){
                 echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
                 echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>"; 
                 echo $prod["preu"]."€ <br>";
+                
                 echo "<input type='button' value='+' class='afegir'></input>";
                 echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
                 echo "<input type='button' value='-' class='treure'></input><br><br></div>";   
             }
-            echo "<div><input type='submit' name='boton' value='siguiente'></input><br><br></div>";
+            echo "<div><input type='submit'  value='siguiente'></input><br><br></div>";
         ?>
         <?php
             $data = file_get_contents("admin/productes.json");

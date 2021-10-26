@@ -32,23 +32,49 @@ include("header.php");
             $preuT=0;
 
           
+            $prodActual=0;
 
             foreach ($_POST as $id => $value){
+
                 if($value!=0){
-                    echo "Nombre de producto: ".$products[$id]["nom"].
+                    echo "Nombre de producto: ".$products[$prodActual]["nom"].
                     "<br>".
                     "Unitats: ".$value.
                     "<br>".
-                    "Preu unitari: ".$products[$id]["preu"]."€ ".
+                    "Preu unitari: ".$products[$prodActual]["preu"]."€ ".
                     "<br>".
-                    "Preu total: ".$products[$id]["preu"]*$value."€ ".
+                    "Preu total: ".$products[$prodActual]["preu"]*$value."€ ".
                     "<br><br>";
                    
-                }
 
+                }
+                $prodActual++; 
             }
             "<br><br>";
            
+
+
+            $comandaDefinitiva = "";
+            $prodActual=0;
+            
+            foreach ($_POST as $id => $value){
+
+                if($value!=0){
+                    $comandaDefinitiva .="Nombre de producto: ".$products[$prodActual]["nom"].
+                    "------".
+                    "Unitats: ".$value.
+                    "------".
+                    "Preu unitari: ".$products[$prodActual]["preu"]."€ ".
+                    "------".
+                    "Preu total: ".$products[$prodActual]["preu"]*$value."€ "."------";        
+
+                }
+                $prodActual++; 
+            }
+
+            echo $comandaDefinitiva;
+            session_start();          
+            $_SESSION["pedido"] = $comandaDefinitiva;
             ?>
     <div>
         <form method="POST" action="Final_Comanda.php" >

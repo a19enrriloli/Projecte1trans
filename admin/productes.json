@@ -63,7 +63,7 @@
 	},
 
 	{
-		"nom": "producte1",
+		"nom": "Tortilla de patatas",
 		"preu": "0.90",
 		"torn": "tarda",
 		"ruta": "hamburguesa.jpg",
@@ -79,7 +79,7 @@
 	},
 
 	{
-		"nom": "producte3",
+		"nom": "Tortilal de patatas la buen",
 		"preu": "1.50",
 		"torn": "tarda",
 		"ruta": "plato_tortilla.jpg",

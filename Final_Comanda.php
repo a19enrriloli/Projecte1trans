@@ -13,6 +13,11 @@
     include("header.php");
     ?>
     <?php
+
+    session_start();          
+    echo $_SESSION["pedido"];
+    
+
     echo"<br>";
     if(isset($_COOKIE["comanda"])){
         
