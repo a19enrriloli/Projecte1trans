@@ -22,7 +22,7 @@ if(isset($_COOKIE["comanda"])){
     <div>
         <h1 class="h1menu">Menu</h1>
     </div>
-
+    <div style="display: flex;">
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
    <form action="Validacio.php" method="post">
     
@@ -52,13 +52,10 @@ if(isset($_COOKIE["comanda"])){
         <div>
         <input type="button"  href="index.php" value='atras'></input>
         </div>
-    </form>
+        </form>
     <!-- Form de tarda -->
-   
-        
-   
-        <p>hola</p>
-
+    </div>
+    
 </body>
 <?php
     include ("footer.php");
