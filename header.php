@@ -10,6 +10,6 @@
 <div class="header-right">
     <a href="index.php"><b>Home</a>
     <a href="Menu.php"><b> Menu </b></a> 
-   <a href="Administracio.php"> Administracio </b></a> 
+   <a href="/admin/Administracio.php"> Administracio </b></a> 
 </div>
 </div>
