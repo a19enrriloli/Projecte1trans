@@ -43,20 +43,22 @@ include("header.php");
                     "<br>".
                     "Preu unitari: ".$products[$prodActual]["preu"]."€ ".
                     "<br>".
-                    "Preu total: ".$products[$prodActual]["preu"]*$value."€ ".
+                    "Preu producte/s: ".$products[$prodActual]["preu"]*$value."€ ".
                     "<br><br>";
-                   
+                    $preuT+=$products[$prodActual]["preu"]*$value;
 
                 }
+               
                 $prodActual++; 
             }
             "<br><br>";
+            echo "Preu total de los productos: ".$preuT." € ";
            
 
 
             $comandaDefinitiva = "";
             $prodActual=0;
-            
+            $p= "";
             foreach ($_POST as $id => $value){
 
                 if($value!=0){
@@ -66,60 +68,27 @@ include("header.php");
                     "------".
                     "Preu unitari: ".$products[$prodActual]["preu"]."€ ".
                     "------".
-                    "Preu total: ".$products[$prodActual]["preu"]*$value."€ "."------";        
+                    "Preu producte/s: ".$products[$prodActual]["preu"]*$value."€ "."------"; 
+                    $preuT+=$products[$prodActual]["preu"]*$value; 
 
                 }
                 $prodActual++; 
             }
-
-            echo $comandaDefinitiva;
+            $preuTv=$preuT/2;
+            $p.= "Preu total de los productos: ".$preuTv." € "."------";
+            
+            //echo $comandaDefinitiva;
             session_start();          
             $_SESSION["pedido"] = $comandaDefinitiva;
+            $_SESSION["precitot"] = $p;
             ?>
-    <div>
-        <form method="POST" action="Final_Comanda.php" >
-            <div class="div1">
-                <div class="div2">
-                    <p>Nom</p>
-                </div>
-                <div>
-                    <br>
-                    <input type="text" id="nom" maxlength="30" required placeholder="Pepe"/>
-                </div>
-            </div>
-
-            <div class="div1">
-                <div class="div2">
-                    <p>Telefono</p>
-                </div>
-                <div>
-                    <br>
-                    <input type="text" id="telefon" maxlength="30" required placeholder="+34 000000000"/>
-                </div>
-            </div>
-            <div class="div1">
-                <div class="div2">
-                    <p>Email</p>
-                </div>
-                <div>
-                    <br>
-                    <input type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
-                </div>
-            </div>
-    </div>
-    <div>
-        <form action="Final_Comanda.php">
-            <br><br>
-            <input type="submit" name="boton" value="enviar">
-        </form>  
-    </div>
-    
-    <div>
-        <form action="Menu.php">
-            <br><br>
-            <input type="submit" name="boton" value="atras">
-        </form>
-    </div>
+    <form method="post" action="Final_Comanda.php">
+		<input name="nombre"type="text" id="nom" maxlength="30" required placeholder="Pepe" />
+		<input name="numero"type="text" id="telefon" maxlength="30" required placeholder="+34 000000000" />
+		<input name="gmail"type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
+        <input type="submit" value="Enviar" />
+	</form>
+    <a href="Menu.php"><button type="button">Atras</button></a>
     <script type="text/javascript" src="js/validacio.js"></script>
 </body>
 <?php
