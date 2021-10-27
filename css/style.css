@@ -104,16 +104,16 @@ body {
   display: inline;
 }
 
-#form1 {
+#form-productes {
   display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   margin-left: 40px;
   /* max-width: fit-content; */
   /* margin-right: 60%; */
 } 
 
 .mati, .tarda{
-  width: 40%;
+  width: 20%;
   border-left: 50px;
 }
 

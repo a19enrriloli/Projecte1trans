@@ -24,7 +24,7 @@ if(isset($_COOKIE["comanda"])){
     </div>
     <div>
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
-   <form action="Validacio.php"0 method="post" id ="form1">
+   <form action="Validacio.php"0 method="post" id ="form-productes">
     
         <?php
             $data = file_get_contents("admin/productes.json");
