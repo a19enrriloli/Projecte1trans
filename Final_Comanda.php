@@ -28,17 +28,18 @@
         }else{
             setcookie("comanda", 54321);
         }
+        
         $minuts= date("i");
         $hora = date("H");
         $fecha = date("d-m-o");
-        if($hora < 11  ){
-            $fh = fopen("$fecha'mati.txt'","a+") or die("Se produjo un error al crear el archivo");
-           
-        } else if($hora==11 && $minuts<=30){
-            $fh = fopen("$fecha'mati.txt'","a+") or die("Se produjo un error al crear el archivo");
+
+        if(($hora < 11) || ($hora==11 && $minuts<=30)  ){
+            $nombreFichero="$fecha'mati.txt'";
         }else{
-            $fh = fopen("$fecha'tarda.txt'","a+") or die("Se produjo un error al crear el archivo");
+            $nombreFichero="$fecha'tarda.txt'";            
         }
+
+        $fh = fopen($nombreFichero,"a+") or die("Se produjo un error al crear el archivo");
 
         $texto = <<<_END
             \n
