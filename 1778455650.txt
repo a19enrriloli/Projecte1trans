@@ -1,0 +1,5 @@
+        Informacion del usuario:
+        Nombre: pepe
+        Telefono: 679823737
+        Correo: a19enrriloli@inspedralbes.cat
+        El pedido:  Nombre de producto: Tortilla de patatas------Unitats: 6------Preu unitari: 0.90€ ------Preu producte/s: 5.4€ ------Nombre de producto: Tortilal de patatas la buen------Unitats: 5------Preu unitari: 1.50€ ------Preu producte/s: 7.5€ ------ Preu total de los productos: 12.9 € ------

@@ -15,12 +15,12 @@
     <?php
 
     session_start();          
-    echo $_SESSION["pedido"];
-    echo $_SESSION["precitot"];
+   // echo $_SESSION["pedido"];
+    //echo $_SESSION["precitot"];
     
     $valida = $_POST['nombre']."------".$_POST['numero']."------".$_POST['gmail'];
     
-    echo $valida;
+   // echo $valida;
     
     echo"<br>";
     if(isset($_COOKIE["comanda"])){
@@ -29,8 +29,23 @@
         setcookie("comanda", 54321);
     }
     session_destroy();  
-    ?>
     
+     $numero = rand();
+        $fh = fopen("$numero.txt","wr") or die("Se produjo un error al crear el archivo");
+
+        $texto = <<<_END
+        Informacion del usuario:
+        Nombre: $_POST[nombre]
+        Telefono: $_POST[numero]
+        Correo: $_POST[gmail]
+        El pedido:  $_SESSION[pedido] $_SESSION[precitot]
+_END;
+        fwrite($fh, $texto);
+        fclose($fh);
+
+        echo "Se ha escrito sin problemas";
+
+    ?>
 
         
         <div>
