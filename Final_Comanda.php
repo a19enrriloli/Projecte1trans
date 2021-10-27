@@ -10,25 +10,53 @@
 
 <body>
     <?php 
-    include("header.php");
+        include("header.php");
     ?>
     <?php
 
-    session_start();          
-    echo $_SESSION["pedido"];
-    echo $_SESSION["precitot"];
-    
-    $valida = $_POST['nombre']."------".$_POST['numero']."------".$_POST['gmail'];
-    
-    echo $valida;
-    
-    echo"<br>";
-    if(isset($_COOKIE["comanda"])){
+        session_start();          
+        echo $_SESSION["pedido"];
+        //echo $_SESSION["precitot"];
         
-    }else{
-        setcookie("comanda", 54321);
-    }
+        $valida = $_POST['nombre']."------".$_POST['numero']."------".$_POST['gmail'];
+        
+        // echo $valida;
+        
+        echo"<br>";
+        if(isset($_COOKIE["comanda"])){
+            
+        }else{
+            setcookie("comanda", 54321);
+        }
+        
+        $minuts= date("i");
+        $hora = date("H");
+        $fecha = date("d-m-o");
+
+        if(($hora < 11) || ($hora==11 && $minuts<=30)  ){
+            $nombreFichero="$fecha'mati.txt'";
+        }else{
+            $nombreFichero="$fecha'tarda.txt'";            
+        }
+
+        $fh = fopen($nombreFichero,"a+") or die("Se produjo un error al crear el archivo");
+
+        $texto = <<<_END
+            \n
+            Informacion del usuario:
+            Hora: $hora:$minuts
+            Nombre: $_POST[nombre]
+            Telefono: $_POST[numero]
+            Correo: $_POST[gmail]
+            Comanda:  $_SESSION[pedido] $_SESSION[precitot]
+        _END;
+        fwrite($fh, $texto);
+        fclose($fh);
+
+        echo "Se ha escrito sin problemas";
+        session_destroy();
     ?>
+
         
         <div>
             <h1>Finalització Comanda</h1>
@@ -41,5 +69,5 @@
 </body>
 <?php
     include ("footer.php");
-    ?>
+?>
 </html>
