@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Menu</title>
+    <title>Final_Comanda</title>
 </head>
 
 <body>
@@ -16,8 +16,12 @@
 
     session_start();          
     echo $_SESSION["pedido"];
+    echo $_SESSION["precitot"];
     
-
+    $valida = $_POST['nombre']."------".$_POST['numero']."------".$_POST['gmail'];
+    
+    echo $valida;
+    
     echo"<br>";
     if(isset($_COOKIE["comanda"])){
         
@@ -31,12 +35,8 @@
         </div>
     </div>
 
-    <div>
-        <form action="Validacio.php">
-            <br><br>
-            <input type="submit" name="boton" value="atras">
-        </form>
-    </div>
+    <a href="Validacio.php"><button type="button">Atras</button></a>
+    
     
 </body>
 <?php

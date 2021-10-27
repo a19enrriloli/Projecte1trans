@@ -49,13 +49,9 @@ if(isset($_COOKIE["comanda"])){
         <div  id="tiquet">
             <script type="text/javascript" src="js/compra.js"></script>
         </div>
-        <div>
-        <input type="button"  href="index.php" value='atras'></input>
-        </div>
-        </form>
-    <!-- Form de tarda -->
-    </div>
-    
+       
+    </form>
+    <a href="index.php"><button type="button">Atras</button></a>
 </body>
 <?php
     include ("footer.php");
