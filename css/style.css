@@ -107,10 +107,15 @@ body {
 form {
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 30px;
+  margin-left: 40px;
+  max-width: fit-content;
+  /* margin-right: 60%; */
 } 
 
-
+.mati{
+  width: 40%;
+  border-left: 50px;
+}
 
 /* {
   grid-column: 1/3;
