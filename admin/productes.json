@@ -63,8 +63,8 @@
 	},
 
 	{
-		"nom": "Tortilla de patatas",
-		"preu": "0.90",
+		"nom": "Hamburguesa",
+		"preu": "2.50",
 		"torn": "tarda",
 		"ruta": "hamburguesa.jpg",
 		"id": "p9"

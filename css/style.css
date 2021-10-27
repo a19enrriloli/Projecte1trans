@@ -104,7 +104,7 @@ body {
   display: inline;
 }
 
-form {
+#form1 {
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   margin-left: 40px;
