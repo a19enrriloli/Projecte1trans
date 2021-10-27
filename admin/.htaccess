@@ -1,0 +1,6 @@
+#Protect Admin
+AuthType Basic
+AuthName "Area de acceso restringido"
+AuthUserFile /home/a20valzavvas/web/cantina6.alumnes.inspedralbes.cat/public_html/admin/.htpasswd
+require user pedralbes
+
