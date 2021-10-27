@@ -28,7 +28,10 @@
     }else{
         setcookie("comanda", 54321);
     }
+    session_destroy();  
     ?>
+    
+
         
         <div>
             <h1>Finalització Comanda</h1>
