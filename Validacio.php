@@ -90,7 +90,7 @@ include("header.php");
 		<input name="gmail"type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
         <input type="submit" value="Enviar" />
 	</form>
-    <a href="Menu.php"><button id="back-button" type="button">Atras</button></a>
+    <a href="Menu.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
     <script type="text/javascript" src="js/validacio.js"></script>
 </body>
 <?php

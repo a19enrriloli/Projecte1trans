@@ -57,7 +57,7 @@
     ?>
   
 
-    <a href="Validacio.php"><button id="back-button" type="button">&#10094 Atras</button></a>
+    <a href="Validacio.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
     
     
 </body>

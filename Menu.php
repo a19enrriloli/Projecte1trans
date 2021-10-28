@@ -38,7 +38,7 @@ if(isset($_COOKIE["comanda"])){
                 echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
                 echo "<input type='button' value='-' class='treure'></input><br><br></div>";   
             }
-            echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
+            echo "<div><input type='submit'  value='COMPRAR'></input><br><br></div>";
         ?>
         <?php
             $data = file_get_contents("admin/productes.json");
