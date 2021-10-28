@@ -12,6 +12,11 @@
     <?php 
         include("header.php");
     ?>
+
+    <div>
+        <h1>Finalització Comanda</h1>
+    </div>
+    
     <?php
 
         session_start();
@@ -37,26 +42,22 @@
 
         $texto = <<<_END
             \n
-            Informacion del usuario:
-            Nombre: $_POST[nombre]
+            Informacio de l'usuari:
+            Torn: $_SESSION[torn]
+            Nom: $_POST[nombre]
             Telefono: $_POST[numero]
-            Correo: $_POST[gmail]
+            Correu: $_POST[gmail]
             Comanda:  $_SESSION[pedido] $_SESSION[precitot]
         _END;
         fwrite($fh, $texto);
         fclose($fh);
 
-        echo "Se ha escrito sin problemas";
+        echo "La teva compra s'ha realitzat correctament";
         session_destroy();
     ?>
+  
 
-        
-        <div>
-            <h1>Finalització Comanda</h1>
-        </div>
-    </div>
-
-    <a href="Validacio.php"><button type="button">Atras</button></a>
+    <a href="Validacio.php"><button id="back-button" type="button">&#10094 Atras</button></a>
     
     
 </body>
