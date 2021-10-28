@@ -51,7 +51,7 @@ if(isset($_COOKIE["comanda"])){
         </div>
        
     </form>
-    <a href="index.php"><button id="back-button" type="button">	&#10094 Enrere</button></a>
+    <a href="index.php"><button id="back-button" type="button"> Enrere</button></a>
 </body>
 <?php
     include ("footer.php");
