@@ -20,7 +20,7 @@
     <div style="text-align:center;">
         <form action="index.php">
             <br><br>
-            <input type="submit" name="boton" value="<-">
+            <input type="submit" name="boton" value="<-" class="button">
         </form>
     </div>
 
