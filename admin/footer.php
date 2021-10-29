@@ -3,7 +3,7 @@
     
     <div width=20%>
         <a href='https://twitter.com/inspedralbes?lang=ca'>
-            <img class=twitter src="img/twitter.png" alt="Logo twitter" width="100px">
+            <img class=twitter src="./twitter.png" alt="Logo twitter" width="100px">
         </a>
     </div>
    

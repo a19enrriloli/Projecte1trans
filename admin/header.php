@@ -2,7 +2,7 @@
 <div class="pag" style=" width: 30%;">
     <div>
         <a href='index.php'>
-            <img class=logo src="img/logo.jpg" alt="Logo Pedralbes" width="200px">
+            <img class=logo src="./logo.jpg" alt="Logo Pedralbes" width="200px">
         </a>
     </div>
 </div>

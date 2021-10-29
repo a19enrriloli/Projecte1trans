@@ -27,7 +27,6 @@ if(isset($_COOKIE["comanda"])){
    <form action="Validacio.php"0 method="post" id ="form-productes">
     <div id="productosM">
         <?php
-<<<<<<< HEAD
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
         foreach ($products as $prod) {
@@ -40,20 +39,6 @@ if(isset($_COOKIE["comanda"])){
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
         echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
-=======
-            $data = file_get_contents("admin/productes.json");
-            $products = json_decode($data, true);
-            foreach ($products as $prod) {
-                echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
-                echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>"; 
-                echo $prod["preu"]."€ <br>";
-                
-                echo "<input type='button' value='+' class='afegir'></input>";
-                echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
-                echo "<input type='button' value='-' class='treure'></input><br><br></div>";   
-            }
-            echo "<div><input type='submit'  value='COMPRAR'></input><br><br></div>";
->>>>>>> af2eead37b83997cbe71ffef685d9934d679ec29
         ?>
         <?php
         $data = file_get_contents("admin/productes.json");

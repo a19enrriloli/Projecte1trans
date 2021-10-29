@@ -10,7 +10,7 @@
 
 <body>
     <?php 
-    include("../header.php");
+    include("./header.php");
     ?>
     <div class="pag" style="display: flex;">
        
@@ -33,6 +33,6 @@
 
 
 <?php
-    include ("../footer.php");
+    include ("./footer.php");
     ?>
 </html>
