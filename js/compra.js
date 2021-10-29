@@ -7,8 +7,34 @@ let carrito = horaMenu();
  
 let datosMenu = document.getElementById("datosjson").textContent;
 
+let button = document.getElementById("seguent");
+
 datosMenu = JSON.parse(datosMenu);
 console.log(datosMenu);
+
+function activarSeguent(button){
+    let cajasTExto = document.getElementsByClassName("Caixatiquet");
+    let i = 0;
+    let comprat = false;
+    button.disabled = true;
+
+    button.style.backgroundColor = "grey";
+    while(i < cajasTExto.length){
+        if(cajasTExto[i].value != 0){
+            
+            comprat = true;
+        }
+        i++;
+    }
+    if(comprat==true){
+        button.disabled = false;
+        button.style.backgroundColor = "#6495ED";
+    }
+
+
+}
+
+activarSeguent(button);
 
 document.addEventListener('click', e => {
 
@@ -24,6 +50,7 @@ document.addEventListener('click', e => {
         retirarProducto(e,e.target.parentNode.id);
 
     }
+    activarSeguent(button);
 });
 
 function añadirProducto(e,idProducto){
