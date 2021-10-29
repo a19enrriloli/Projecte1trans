@@ -1,0 +1,46 @@
+    
+
+    Informacio de l'usuari:
+    Torn: tarda
+    Nom: arnold
+    Telefono: 631161417
+    Correu: a@inspedralbes.cat
+    Comanda:  
+ Nom del producte: Hamburguesa
+Unitats: 1
+Preu unitari: 2.00€ 
+Preu producte/s: 2€ 
+
+ Nom del producte: Pizza 4 formatges
+Unitats: 1
+Preu unitari: 1.50€ 
+Preu producte/s: 1.5€ 
+
+ Nom del producte: Truita de patatas
+Unitats: 1
+Preu unitari: 3.50€ 
+Preu producte/s: 3.5€ 
+
+ Nom del producte: Amanida
+Unitats: 1
+Preu unitari: 5.50€ 
+Preu producte/s: 5.5€ 
+ Preu total dels productes: 12.5 € ------
+    
+
+    Informacio de l'usuari:
+    Torn: tarda
+    Nom: arnold
+    Telefono: 631161417
+    Correu: a@inspedralbes.cat
+    Comanda:  
+ Nom del producte: Hamburguesa
+Unitats: 2
+Preu unitari: 2.00€ 
+Preu producte/s: 4€ 
+
+ Nom del producte: Llauna CocaCola
+Unitats: 1
+Preu unitari: 0.90€ 
+Preu producte/s: 0.9€ 
+ Preu total dels productes: 4.9 € ------
