@@ -15,35 +15,19 @@
 	},
 
 	{
-		"nom": "Entrepà Truita",
-		"preu": "1.50",
-		"torn": "mati",
-		"ruta": "boc_tortilla2.jpg",
-		"id": "p3"
-	},
-
-	{
 		"nom": "Suc de préssec",
 		"preu": "0.90",
 		"torn": "mati",
 		"ruta": "zumo_melocoton.jpg",
-		"id": "p4"
+		"id": "p3"
 	},
 
 	{
-		"nom": "Entrepà de tonyina",
-		"preu": "1.50",
-		"torn": "mati",
-		"ruta": "boc_atun.jpg",
-		"id": "p5"
-	},
-
-	{
-		"nom": "Donuts (2 unitats)",
+		"nom": "Donuts",
 		"preu": "1.50",
 		"torn": "mati",
 		"ruta": "donuts.jpg",
-		"id": "p6"
+		"id": "p4"
 	},
 
 	{
@@ -51,7 +35,7 @@
 		"preu": "1.00",
 		"torn": "mati",
 		"ruta": "croissant.jpg",
-		"id": "p7"
+		"id": "p5"
 	},
 
 	{
@@ -59,7 +43,7 @@
 		"preu": "1.00",
 		"torn": "mati",
 		"ruta": "cafe.png",
-		"id": "p8"
+		"id": "p6"
 	},
 
 	{
@@ -67,7 +51,7 @@
 		"preu": "2.00",
 		"torn": "tarda",
 		"ruta": "hamburguesa.jpg",
-		"id": "p9"
+		"id": "p7"
 	},
 
 	{
@@ -75,7 +59,7 @@
 		"preu": "1.50",
 		"torn": "tarda",
 		"ruta": "pizza.png",
-		"id": "p10"
+		"id": "p8"
 	},
 
 	{
@@ -83,7 +67,7 @@
 		"preu": "3.50",
 		"torn": "tarda",
 		"ruta": "plato_tortilla.jpg",
-		"id": "p11"
+		"id": "p9"
 	},
 
 	{
@@ -91,7 +75,7 @@
 		"preu": "5.50",
 		"torn": "tarda",
 		"ruta": "ensalada.png",
-		"id": "p12"
+		"id": "p10"
 	},
 
 	{
@@ -99,7 +83,7 @@
 		"preu": "0.90",
 		"torn": "tarda",
 		"ruta": "zumo_melocoton.jpg",
-		"id": "p13"
+		"id": "p11"
 	},
 
 	{
@@ -107,6 +91,6 @@
 		"preu": "0.90",
 		"torn": "tarda",
 		"ruta": "cocacola.jpg",
-		"id": "p14"
+		"id": "p12"
 	}
 ]

@@ -114,7 +114,7 @@ function horaMenu(){
     //console.log(minuts);
     let mati = document.getElementsByClassName("mati");
     let tarda = document.getElementsByClassName("tarda");
-    if(horaM < 11  ){
+    if(10 < 11  ){
 
         for(let i=0;i < tarda.length;i++){
             tarda[i].style.display='none';
