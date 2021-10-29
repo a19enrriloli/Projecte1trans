@@ -1,36 +1,55 @@
+.admin{
+  text-align: center;
+}
+.tiquet{
+  text-align: center;
+  border: black solid;
+  margin-bottom: 20%;
+}
+.button {
+  background-color: #6495ED;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 /*  ESTILOS DEL HEADER */
 .header .logo{
   font-size: 25px;
   font-weight: bold;
 }
-  
+
 .header a{
-  margin-left: 50px;  
+  margin-left: 50px;
 }
 
 * {box-sizing: border-box;}
-  
-body { 
+
+body {
   margin :0;
   font-family: Arial, Helvetica, sans-serif;
 }
-  
+
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 50px;
 }
-  
+
 .header a {
   float: left;
   color: black;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
-  
+
 .header{
   margin:0;
 }
@@ -38,11 +57,11 @@ body {
   background-color: #ddd;
   color: black;
 }
-  
-  
+
+
 .header h1 {
   text-align:center;
-  width: 1400px; 
+  width: 1400px;
 }
 
 .class2-item{
@@ -59,11 +78,11 @@ body {
 .footer .twitter{
   font-size: 45px;
   font-weight: bold;
-  margin-left: 885px; 
+  margin-left: 885px;
   color: black;
   padding: 12px;
   text-decoration: none;
-  
+
   line-height: 25px;
   border-radius: 4px;
 }
@@ -80,7 +99,7 @@ body {
   color: black;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -96,46 +115,4 @@ body {
 
 .footer{
   background-color:rgb(196, 200, 207);
-}
-
-/* OTROS ESTILOS */
-.bocadillos{
-  margin: 45px;
-  display: inline;
-}
-
-#form-productes {
-  display: inline-grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  margin-left: 40px;
-  /* max-width: fit-content; */
-  /* margin-right: 60%; */
-} 
-
-.mati, .tarda{
-  width: 20%;
-  border-left: 50px;
-}
-
-#back-button{
-  margin-left: 40px;
-}
-
-.h1menu{    /* Titulo menu */
-  text-align:center;
-  width: 1800px;
-  
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-
-h2{
-  height: 50px;
-} 
-#tiquet{
-  width: 1800px;
 }
