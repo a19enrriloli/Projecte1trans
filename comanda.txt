@@ -1,16 +1,24 @@
+    
 
     Informacion del usuario:
-    Nombre: arnold
-    Telefono: 631161417
-    Correo: a@inspedralbes.cat
-    Comanda:  Nombre de producto: Entrepà de pernil amb formatge------Unitats: 1------Preu unitari: 1.50€ ------Preu producte/s: 1.5€ ------Nombre de producto: Llauna CocaCola------Unitats: 1------Preu unitari: 0.90€ ------Preu producte/s: 0.9€ ------ Preu total de los productos: 2.4 € ------    
+    Torn: tarda
+    Nombre: usr1
+    Telefono: 123456789
+    Correo: correu@inspedralbes.cat
+    Comanda:  Nombre de producto: Truita de patatas------Unitats: 1------Preu unitari: 3.50€ ------Preu producte/s: 3.5€ ------Nombre de producto: Llauna CocaCola------Unitats: 1------Preu unitari: 0.90€ ------Preu producte/s: 0.9€ ------ Preu total de los productos: 4.4 € ------    
 
     Informacion del usuario:
-    Nombre: arnold
-    Telefono: 631161417
-    Correo: a@inspedralbes.cat
-    Comanda:   Preu total de los productos: 0 € ------    
+    Torn: tarda
+    Nombre: usr2
+    Telefono: 123456789
+    Correo: correu@inspedralbes.cat
+    Comanda:  
+ Nombre de producto: Hamburguesa
+Unitats: 1
+Preu unitari: 2.00€ 
+Preu producte/s: 2€ 
 
+<<<<<<< HEAD
     Informacion del usuario:
     Nombre: arnold
     Telefono: 631161417
@@ -22,3 +30,27 @@
     Telefono: 631161417
     Correo: a@inspedralbes.cat
     Comanda:  Nombre de producto: Hamburguesa------Unitats: 2------Preu unitari: 2.50€ ------Preu producte/s: 5€ ------ Preu total de los productos: 5 € ------
+=======
+ Nombre de producto: Llauna CocaCola
+Unitats: 1
+Preu unitari: 0.90€ 
+Preu producte/s: 0.9€ 
+ Preu total de los productos: 2.9 € ------    
+
+    Informacio de l'usuari:
+    Torn: tarda
+    Nom: pepe
+    Telefono: 123456789
+    Correu: correu@inspedralbes.cat
+    Comanda:  
+ Nom del producte: Hamburguesa
+Unitats: 1
+Preu unitari: 2.00€ 
+Preu producte/s: 2€ 
+
+ Nom del producte: Llauna CocaCola
+Unitats: 2
+Preu unitari: 0.90€ 
+Preu producte/s: 1.8€ 
+ Preu total dels productes: 3.8 € ------
+>>>>>>> af2eead37b83997cbe71ffef685d9934d679ec29
