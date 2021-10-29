@@ -16,17 +16,17 @@
     ?>
             
     <div class="slider">
-    <ul>
-        <li>
-            <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">   
-        </li>
-        <li>
-            <img class=logo src="img/entrepans.jpg" alt="Logo pp" width="600px">
-        </li>
-        <li>
-            <img class=logo src="img/bocatas.jpg" alt="L ogo pp" width="600px">
-        </li>
-    </ul>
+        <ul>
+            <li>
+                <img class=logo src="img/slider/slider_image1.jfif" alt="Logo pp" width="600px">   
+            </li>
+            <li>
+                <img class=logo src="img/slider/image2.png" alt="Logo pp" width="600px">
+            </li>
+            <li>
+                <img class=logo src="img/slider/image3.jfif" alt="L ogo pp" width="600px">
+            </li>
+        </ul>
     </div>
     <h3>Benvinguts a la Cantina Pedralbes</h3>        
 

@@ -3,10 +3,6 @@
   font-size: 25px;
   font-weight: bold;
 }
-  
-.header a{
-  margin-left: 50px;  
-}
 
 * {box-sizing: border-box;}
   
@@ -19,6 +15,8 @@ body {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 50px;
+  display: flex;
+  margin:0;
 }
   
 .header a {
@@ -29,20 +27,23 @@ body {
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  margin-left: 50px;
 }
   
-.header{
-  margin:0;
-}
 .header a:hover {
   background-color: #ddd;
-  color: black;
+  color:dodgerblue;
 }
   
   
-.header h1 {
-  text-align:center;
-  width: 1400px; 
+.header {
+  /* text-align:center; */
+  width: 1903px; 
+}
+
+h1{
+  margin-left: 550px;
+
 }
 
 .class2-item{
@@ -51,7 +52,9 @@ body {
 }
 
 .header-right {
-  float: right;
+  /* float: right; */
+  margin-right: 140px;
+  margin-left: -20px;
 }
 
 
@@ -98,6 +101,7 @@ body {
   background-color:rgb(196, 200, 207);
 }
 
+
 /* OTROS ESTILOS */
 .bocadillos{
   margin: 30px;
@@ -108,10 +112,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
  
-  
-
-  
 }
+/* #form-productes {
+  display: inline-grid;
+  margin-left: 40px;
+}  */
 
 
 .mati{
@@ -150,27 +155,28 @@ h2{
 /* SLIDER */
 
 .slider {
-  width: 600px;
+  width: 1700px;
   margin: auto;
+  margin-left: 110px;
+  margin-right: 110px;
   overflow:hidden;
-
 }
 
 .slider ul {
   display: flex;
   padding: 0;
-  width: 300%;
+  width: 1900px;
   animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
-  width: 300%;
+  width: 1700px;
   list-style: none;
 }
 
 .slider img {
-  width: 600px;
-  height: 500px;
+  width: 1700px;
+  height: 600px;
 }
 
 @keyframes cambio {
