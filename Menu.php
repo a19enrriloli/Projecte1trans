@@ -38,6 +38,7 @@ if(isset($_COOKIE["comanda"])){
             echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
+        
         echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
         ?>
         <?php
@@ -45,13 +46,14 @@ if(isset($_COOKIE["comanda"])){
         $products = json_decode($data, true);
         echo "<div hidden id='datosjson' > ".$data."</div>";
         ?>
-    </div>
-
-
-        <div  id="tiquet">
+         <div  id="tiquet">
+             
             <script type="text/javascript" src="js/compra.js"></script>
         </div>
+
+
        
+    </div> 
     </form>
     <a href="index.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
 </body>

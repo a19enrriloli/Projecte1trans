@@ -51,8 +51,11 @@ function crearTiquet(datosMenu){
     let txt = "";
     let preuT = 0;
     let i = 0;
+    txt += "<h1>Tiquet:</h1> ";
     while(i < cajasTExto.length){
+
         if(cajasTExto[i].value != 0){
+            txt += "<br>";
             txt += "Article: " + datosMenu[i].nom;
             txt += "<br>";
             txt += "Unitats: " + cajasTExto[i].value;
@@ -66,6 +69,7 @@ function crearTiquet(datosMenu){
         }
     i++;
     }
+
     txt += "IMPORT: " + preuT + "€";
     tiquet.innerHTML = txt;
 
