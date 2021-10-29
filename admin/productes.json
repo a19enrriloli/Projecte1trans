@@ -16,7 +16,7 @@
 
 	{
 		"nom": "Entrepà Truita",
-		"preu": "1.80",
+		"preu": "1.50",
 		"torn": "mati",
 		"ruta": "boc_tortilla2.jpg",
 		"id": "p3"
@@ -24,7 +24,7 @@
 
 	{
 		"nom": "Suc de préssec",
-		"preu": "1.00",
+		"preu": "0.90",
 		"torn": "mati",
 		"ruta": "zumo_melocoton.jpg",
 		"id": "p4"
@@ -64,41 +64,49 @@
 
 	{
 		"nom": "Hamburguesa",
-		"preu": "2.50",
+		"preu": "2.00",
 		"torn": "tarda",
 		"ruta": "hamburguesa.jpg",
 		"id": "p9"
 	},
 
 	{
-		"nom": "producte2",
-		"preu": "2.50",
+		"nom": "Pizza 4 formatges",
+		"preu": "1.50",
 		"torn": "tarda",
-		"ruta": "pizza.jpg",
+		"ruta": "pizza.png",
 		"id": "p10"
 	},
 
 	{
-		"nom": "Tortilla de patatas",
-		"preu": "1.50",
+		"nom": "Truita de patatas",
+		"preu": "3.50",
 		"torn": "tarda",
 		"ruta": "plato_tortilla.jpg",
 		"id": "p11"
 	},
 
 	{
-		"nom": "producte4",
-		"preu": "1.50",
+		"nom": "Amanida",
+		"preu": "5.50",
 		"torn": "tarda",
-		"ruta": "producte3.jpg",
+		"ruta": "ensalada.png",
 		"id": "p12"
 	},
 
 	{
-		"nom": "producte5",
-		"preu": "1.50",
+		"nom": "Suc de prèssec",
+		"preu": "0.90",
 		"torn": "tarda",
-		"ruta": "producte3.jpg",
+		"ruta": "zumo_melocoton.jpg",
 		"id": "p13"
+	},
+
+	{
+		"nom": "Llauna CocaCola",
+		"preu": "0.90",
+		"torn": "tarda",
+		"ruta": "cocacola.jpg",
+		"id": "p14"
 	}
 ]
