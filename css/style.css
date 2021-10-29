@@ -12,7 +12,7 @@ body {
 }
   
 .header {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #f1f1f1;
   padding: 20px 50px;
   display: flex;
@@ -20,13 +20,11 @@ body {
 }
   
 .header a {
-  float: left;
   color: black;
   padding: 12px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
-  border-radius: 4px;
   margin-left: 50px;
 }
   
@@ -34,28 +32,23 @@ body {
   background-color: #ddd;
   color:dodgerblue;
 }
-  
-  
-.header {
-  /* text-align:center; */
-  width: 1903px; 
-}
 
-h1{
-  margin-left: 550px;
-
-}
+/* h1{
+  margin-left: 350px;
+  width: 130px;w
+} */
 
 .class2-item{
   background-color: #ddd;
   color: black;
 }
 
-.header-right {
+/* .header-right {
   /* float: right; */
-  margin-right: 140px;
-  margin-left: -20px;
-}
+  /* margin-right: 140px; 
+  margin-left: 200px;
+  text-align: right;
+} */
 
 
 /*  ESTILOS DEL FOOTER */
@@ -113,11 +106,9 @@ h1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
  
 }
-/* #form-productes {
-  display: inline-grid;
+#form-productes {
   margin-left: 40px;
-}  */
-
+} 
 
 .mati{
   width: 20%;
@@ -133,8 +124,8 @@ h1{
 }
 
 .h1menu{    /* Titulo menu */
-  text-align:center;
-  width: 1800px;
+  text-align: center;
+  width: 750px;
   
 }
 .center {

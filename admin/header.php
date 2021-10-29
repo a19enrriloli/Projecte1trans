@@ -4,11 +4,10 @@
             <img class=logo src="./logo.jpg" alt="Logo Pedralbes" width="200px">
         </a>
     </div>
-    </div>
-        <h1> CANTINA<h1>
-        <div class="header-right">
-            <a href="../index.php"><b>Home</a>
-            <a href="../Menu.php"><b> Menu </b></a>
-        <a href="admin/Administracio.php"> Administracio </b></a> 
+    <div><h1> CANTINA</h1></div>
+    <div class="header-right">
+        <a href="../index.php"> Home</a>
+        <a href="../Menu.php"> Menu </a>
+        <a href="admin/Administracio.php"> Administracio </a> 
     </div>
 </div>
