@@ -47,7 +47,7 @@
             Nom: $_POST[nombre]
             Telefono: $_POST[numero]
             Correu: $_POST[gmail]
-            Comanda:  $_SESSION[pedido] $_SESSION[precitot]
+            Comanda:  $_SESSION[pedido] $_SESSION[precitot]\n
         _END;
         fwrite($fh, $texto);
         fclose($fh);
@@ -57,7 +57,7 @@
     ?>
   
 
-    <a href="Validacio.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
+    <a href="index.php"><button id="back-button" type="button" class="button">&#10094 Enrere</button></a>
     
     
 </body>

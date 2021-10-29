@@ -88,9 +88,9 @@ include("header.php");
 		<input name="nombre"type="text" id="nom" maxlength="30" required placeholder="Pepe" />
 		<input name="numero"type="text" id="telefon" maxlength="30" required placeholder="+34 000000000" />
 		<input name="gmail"type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar" class="button"/>
+        <a href="Menu.php"><button id="back-button" type="button" class="button">&#10094 Enrere</button></a>
 	</form>
-    <a href="Menu.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
     <script type="text/javascript" src="js/validacio.js"></script>
 </body>
 <?php
