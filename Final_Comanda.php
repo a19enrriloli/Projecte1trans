@@ -31,7 +31,7 @@
         if(isset($_COOKIE["comanda"])){
             
         }else{
-            setcookie("comanda", 54321,86400);
+            setcookie("comanda", 54321,time() + (86400));
         }
         
 
