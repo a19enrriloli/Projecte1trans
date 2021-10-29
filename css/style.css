@@ -100,10 +100,13 @@ body {
 
 /* OTROS ESTILOS */
 .bocadillos{
-  margin: 45px;
-  display: inline;
+  margin: 30px;
+  padding: 30px;
+  display: flex;
 }
+.productosM{
 
+}
 #form-productes {
   display: inline-grid;
   /* grid-template-columns: repeat(3, 1fr); */
