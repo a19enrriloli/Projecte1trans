@@ -26,7 +26,7 @@
     ?>
     </div>
     <div>
-            <a href="../index.php"><button id="back-button" type="button"> Enrere</button></a>
+            <a href="../index.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
     </div>
     
 </body>
