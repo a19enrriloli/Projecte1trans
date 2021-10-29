@@ -24,11 +24,12 @@ if(isset($_COOKIE["comanda"])){
     </div>
     <div>
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
-   <form action="Validacio.php"0 method="post" id ="form-productes">
+   <form action="Validacio.php" method="post" id ="form-productes">
     <div id="productosM">
         <?php
         $data = file_get_contents("admin/productes.json");
         $products = json_decode($data, true);
+        $valor = 1;
         foreach ($products as $prod) {
             echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
             echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>";
@@ -38,7 +39,8 @@ if(isset($_COOKIE["comanda"])){
             echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
             echo "<input type='button' value='-' class='treure'></input><br><br></div>";
         }
-        echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
+            echo "<div><input type='submit'  class='button' id='seguent' value='Següent &#10095'></input><br><br></div>";
+
         ?>
         <?php
         $data = file_get_contents("admin/productes.json");
@@ -53,7 +55,7 @@ if(isset($_COOKIE["comanda"])){
         </div>
        
     </form>
-    <a href="index.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
+    <a href="index.php"><button id="back-button" type="button" class="button">&#10094 Enrere</button></a>
 </body>
 <?php
     include ("footer.php");
