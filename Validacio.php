@@ -37,7 +37,7 @@ include("header.php");
             foreach ($_POST as $id => $value){
 
                 if($value!=0){
-                    echo "Nombre de producto: ".$products[$prodActual]["nom"].
+                    echo "Nom del producte: ".$products[$prodActual]["nom"].
                     "<br>".
                     "Unitats: ".$value.
                     "<br>".
@@ -52,7 +52,7 @@ include("header.php");
                 $prodActual++; 
             }
             "<br><br>";
-            echo "Preu total de los productos: ".$preuT." € ";
+            echo "Preu total de la comanda: ".$preuT." € ";
            
 
 
@@ -62,25 +62,27 @@ include("header.php");
             foreach ($_POST as $id => $value){
 
                 if($value!=0){
-                    $comandaDefinitiva .="Nombre de producto: ".$products[$prodActual]["nom"].
-                    "------".
+                    $comandaDefinitiva .="\n Nom del producte: ".$products[$prodActual]["nom"].
+                    "\n".
                     "Unitats: ".$value.
-                    "------".
+                    "\n".
                     "Preu unitari: ".$products[$prodActual]["preu"]."€ ".
-                    "------".
-                    "Preu producte/s: ".$products[$prodActual]["preu"]*$value."€ "."------"; 
+                    "\n".
+                    "Preu producte/s: ".$products[$prodActual]["preu"]*$value."€ "."\n"; 
+                    $torn= $products[$prodActual]["torn"];
                     $preuT+=$products[$prodActual]["preu"]*$value; 
-
+                    
                 }
                 $prodActual++; 
             }
             $preuTv=$preuT/2;
-            $p.= "Preu total de los productos: ".$preuTv." € "."------";
+            $p.= "Preu total dels productes: ".$preuTv." € "."------";
             
             //echo $comandaDefinitiva;
             session_start();          
             $_SESSION["pedido"] = $comandaDefinitiva;
             $_SESSION["precitot"] = $p;
+            $_SESSION["torn"] = $torn;
             ?>
     <form method="post" action="Final_Comanda.php">
 		<input name="nombre"type="text" id="nom" maxlength="30" required placeholder="Pepe" />
@@ -88,7 +90,7 @@ include("header.php");
 		<input name="gmail"type="text" id="email" maxlength="30" required placeholder="correu@inspedralbes.cat"/>
         <input type="submit" value="Enviar" />
 	</form>
-    <a href="Menu.php"><button type="button">Atras</button></a>
+    <a href="Menu.php"><button id="back-button" type="button">&#10094 Enrere</button></a>
     <script type="text/javascript" src="js/validacio.js"></script>
 </body>
 <?php
