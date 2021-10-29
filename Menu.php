@@ -25,26 +25,28 @@ if(isset($_COOKIE["comanda"])){
     <div>
    <!-- Creamos un formulario donde mostraremos los productos guardados en nuestro archivo JSON -->
    <form action="Validacio.php"0 method="post" id ="form-productes">
-    
+    <div id="productosM">
         <?php
-            $data = file_get_contents("admin/productes.json");
-            $products = json_decode($data, true);
-            foreach ($products as $prod) {
-                echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
-                echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>"; 
-                echo $prod["preu"]."€ <br>";
-                
-                echo "<input type='button' value='+' class='afegir'></input>";
-                echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
-                echo "<input type='button' value='-' class='treure'></input><br><br></div>";   
-            }
-            echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
+        $data = file_get_contents("admin/productes.json");
+        $products = json_decode($data, true);
+        foreach ($products as $prod) {
+            echo "<div  id='".$prod["id"]."' class='".$prod["torn"]."'>".$prod["nom"]."</br>";
+            echo "<img src='img/productes/".$prod["ruta"]."' width=350px height=300px></br>";
+            echo $prod["preu"]."€ <br>";
+
+            echo "<input type='button' value='+' class='afegir'></input>";
+            echo "<input type='text' name=".$prod['id']." value='0' class='Caixatiquet' id='i".$prod["id"]."'>";
+            echo "<input type='button' value='-' class='treure'></input><br><br></div>";
+        }
+        echo "<div><input type='submit'  value='Següent &#10095'></input><br><br></div>";
         ?>
         <?php
-            $data = file_get_contents("admin/productes.json");
-            $products = json_decode($data, true);
-            echo "<div hidden id='datosjson' > ".$data."</div>";
+        $data = file_get_contents("admin/productes.json");
+        $products = json_decode($data, true);
+        echo "<div hidden id='datosjson' > ".$data."</div>";
         ?>
+    </div>
+
 
         <div  id="tiquet">
             <script type="text/javascript" src="js/compra.js"></script>
