@@ -14,13 +14,29 @@
     <?php 
         include("header.php");
     ?>
-                
-    <div class="bocadillos">
+            
+    <div class="slider">
+    <ul>
+        <li>
+            <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">   
+        </li>
+        <li>
+            <img class=logo src="img/entrepans.jpg" alt="Logo pp" width="600px">
+        </li>
+        <li>
+            <img class=logo src="img/bocatas.jpg" alt="L ogo pp" width="600px">
+        </li>
+    </ul>
+    </div>
+    <h3>Benvinguts a la Cantina Pedralbes</h3>        
+
+
+    <!-- <div class="bocadillos">
     <img class=logo src="img/bocadillos.jpg" alt="Logo pp" width="600px">
     
     <img class=logo src="img/entrepans.jpg" alt="Logo pp" width="600px">
     <img class=logo src="img/bocatas.jpg" alt="L ogo pp" width="600px">
-    </div>
+    </div> -->
 
 
 </body>
